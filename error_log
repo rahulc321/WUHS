@@ -1,0 +1,6 @@
+[25-Aug-2021 12:38:24 America/Chicago] PHP Warning:  include(../header1.php): failed to open stream: No such file or directory in /home1/elefaw8a/elevensoft.in/wuhsphp/about-overview.php on line 1
+[25-Aug-2021 12:38:24 America/Chicago] PHP Warning:  include(../header1.php): failed to open stream: No such file or directory in /home1/elefaw8a/elevensoft.in/wuhsphp/about-overview.php on line 1
+[25-Aug-2021 12:38:24 America/Chicago] PHP Warning:  include(): Failed opening '../header1.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/elefaw8a/elevensoft.in/wuhsphp/about-overview.php on line 1
+[25-Aug-2021 12:38:24 America/Chicago] PHP Warning:  include(../footer1.php): failed to open stream: No such file or directory in /home1/elefaw8a/elevensoft.in/wuhsphp/about-overview.php on line 373
+[25-Aug-2021 12:38:24 America/Chicago] PHP Warning:  include(../footer1.php): failed to open stream: No such file or directory in /home1/elefaw8a/elevensoft.in/wuhsphp/about-overview.php on line 373
+[25-Aug-2021 12:38:24 America/Chicago] PHP Warning:  include(): Failed opening '../footer1.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home1/elefaw8a/elevensoft.in/wuhsphp/about-overview.php on line 373

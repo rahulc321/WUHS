@@ -1,0 +1,376 @@
+@font-face {
+  font-family: "League Gothic";
+  src: url("fonts/leaguegothic-regular-webfont.eot?orgId=00D80000000cFjT&orgId=00DP0000003pCrO");
+  src: url("fonts/leaguegothic-regular-webfont.eot?orgId=00D80000000cFjT&orgId=00DP0000003pCrO#iefix") format("embedded-opentype"), url("fonts/leaguegothic-regular-webfont.woff?orgId=00D80000000cFjT&orgId=00DP0000003pCrO") format("woff"), url("fonts/leaguegothic-regular-webfont.ttf?orgId=00D80000000cFjT&orgId=00DP0000003pCrO") format("truetype");
+}
+
+@font-face {
+  font-family: "League Gothic";
+  font-stretch: condensed;
+  src: url("fonts/leaguegothic-condensed-regular-webfont.eot?orgId=00D80000000cFjT&orgId=00DP0000003pCrO");
+  src: url("fonts/leaguegothic-condensed-regular-webfont.eot?orgId=00D80000000cFjT&orgId=00DP0000003pCrO#iefix") format("embedded-opentype"), url("fonts/leaguegothic-condensed-regular-webfont.woff?orgId=00D80000000cFjT&orgId=00DP0000003pCrO") format("woff"), url("fonts/leaguegothic-condensed-regular-webfont.ttf?orgId=00D80000000cFjT&orgId=00DP0000003pCrO") format("truetype");
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("fonts/Brandon_Grotesque_Regular.eot?orgId=00D80000000cFjT&orgId=00DP0000003pCrO");
+  src: url("fonts/Brandon_Grotesque_Regular.eot?orgId=00D80000000cFjT&orgId=00DP0000003pCrO#iefix") format("embedded-opentype"), url("fonts/Brandon_Grotesque_Regular.woff2?orgId=00D80000000cFjT&orgId=00DP0000003pCrO") format("woff2"), url("fonts/Brandon_Grotesque_Regular.woff?orgId=00D80000000cFjT&orgId=00DP0000003pCrO") format("woff"), url("fonts/Brandon_Grotesque_Regular.ttf?orgId=00D80000000cFjT&orgId=00DP0000003pCrO") format("truetype");
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  font-weight: normal;
+  font-style: italic;
+  src: url("fonts/Brandon_Grotesque_Italic.eot?orgId=00D80000000cFjT&orgId=00DP0000003pCrO");
+  src: url("fonts/Brandon_Grotesque_Italic.eot?orgId=00D80000000cFjT&orgId=00DP0000003pCrO#iefix") format("embedded-opentype"), url("fonts/Brandon_Grotesque_Italic.woff2?orgId=00D80000000cFjT&orgId=00DP0000003pCrO") format("woff2"), url("fonts/Brandon_Grotesque_Italic.woff?orgId=00D80000000cFjT&orgId=00DP0000003pCrO") format("woff"), url("fonts/Brandon_Grotesque_Italic.ttf?orgId=00D80000000cFjT&orgId=00DP0000003pCrO") format("truetype");
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  font-weight: 900;
+  font-style: normal;
+  src: url("fonts/Brandon_Grotesque_Black.eot?orgId=00D80000000cFjT&orgId=00DP0000003pCrO");
+  src: url("fonts/Brandon_Grotesque_Black.eot?orgId=00D80000000cFjT&orgId=00DP0000003pCrO#iefix") format("embedded-opentype"), url("fonts/Brandon_Grotesque_Black.woff2?orgId=00D80000000cFjT&orgId=00DP0000003pCrO") format("woff2"), url("fonts/Brandon_Grotesque_Black.woff?orgId=00D80000000cFjT&orgId=00DP0000003pCrO") format("woff"), url("fonts/Brandon_Grotesque_Black.ttf?orgId=00D80000000cFjT&orgId=00DP0000003pCrO") format("truetype");
+}
+
+.vet {
+  background: none;
+  background-color: #d9d7d7;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.vet a {
+  color: #428bca;
+}
+
+.vet a:hover {
+  color: #1ECAD3;
+}
+
+.vet h1, .vet h2, .vet h3, .vet h4, .vet h5, .vet h6 {
+  color: #00303C;
+  font-family: "League Gothic", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.vet h3, .vet .h3 {
+  font-size: 48px;
+}
+
+.vet h4, .vet .h4 {
+  color: #006580;
+  font-size: 34px;
+}
+
+.vet h5, .vet .h5 {
+  color: #006580;
+  font-size: 20px;
+}
+
+.vet hr {
+  display: none;
+}
+
+p {
+  line-height: 1.675;
+  margin: 0 0 0.9375rem;
+}
+
+.vet .header .text-muted {
+  color: #d9d7d7;
+}
+
+.vet .header-row {
+  background-color: #fff;
+  font-family: "Brandon Grotesque", sans-serif;
+  font-size: 15px;
+}
+
+.vet .header .text-muted {
+  color: #2c2d34;
+}
+
+.vet .header-row .list-unstyled {
+  font-weight: normal;
+}
+
+.vet .header-row .list-unstyled h5 {
+  text-transform: none;
+}
+
+.vet .header .list-unstyled li, .vet .header .list-unstyled li h5 {
+  color: #006580;
+}
+
+.vet p.required:before {
+  content: "*";
+  margin-right: 4px;
+}
+
+.vet label.required:after, .vet p.required:before {
+  color: #c13647;
+}
+
+.vet .intro {
+  font-style: italic;
+  text-align: justify;
+}
+
+.vet .nav-row {
+  background-color: #00303C;
+  border-bottom: 1px solid #006580;
+  border-top: 1px solid #006580;
+  color: #f5f5f5;
+  font-size: 13px;
+  text-align: justify;
+}
+
+.vet .nav-row a {
+  color: #428bca;
+}
+
+.vet .nav-row a:hover {
+  color: #1ECAD3;
+}
+
+.vet .nav-row .text-muted {
+  color: #f5f5f5;
+}
+
+.vet div.footer-row {
+  background-color: #00303C;
+  border-bottom: 1px solid #13141b;
+  border-top: 1px solid #46474e;
+}
+
+.vet div.footer-row p {
+  color: #f5f5f5;
+  font-size: 13px;
+}
+
+.vet .text-danger {
+  color: #c13647;
+}
+
+.vet .panel.panel-error {
+  background: none;
+  background-color: #c13647;
+  border-color: #c13647;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #f5f5f5;
+}
+
+.vet .panel.panel-success {
+  background: none;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #3c763d;
+}
+
+.vet .glyphicon-question-sign {
+  color: #428bca;
+}
+
+.vet ul.alternate {
+  list-style-type: disc;
+}
+
+.vet .btn {
+  background: none;
+  border: 2px solid transparent;
+  border-radius: 0;
+  font-family: "Brandon Grotesque";
+  font-weight: bold;
+  padding: 6px 24px;
+  text-transform: uppercase;
+}
+
+.vet .btn-default, .vet .btn-info, .vet .btn-danger {
+  color: #006580;
+  border-color: #006580;
+}
+
+.vet .btn-default:hover, .vet .btn-default:focus, .vet .btn-info:hover, .vet .btn-info:focus, .vet .btn-danger:hover, .vet .btn-danger:focus {
+  color: white;
+  background-color: #006580;
+}
+
+.vet .btn-primary {
+  color: #006580;
+  border-color: #006580;
+}
+
+.vet .btn-primary:hover, .vet .btn-primary:focus {
+  color: white;
+  background-color: #006580;
+}
+
+.vet select {
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url(images/dropdown-arrow.png);
+  background-position: right;
+  background-size: 34px 34px;
+  background-repeat: no-repeat;
+}
+
+.vet select:focus {
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url(images/dropdown-arrow-reverse.png);
+  background-position: right;
+  background-size: 34px 34px;
+  background-repeat: no-repeat;
+}
+
+.vet .multi-select {
+	background-image: none !important;
+}
+
+.vet .multiSelectPicklistRow select {
+	background-image: none;
+}
+
+.vet div.steps-row {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #d9d7d7;
+  border-top: 1px solid #d9d7d7;
+}
+
+.vet div.steps-row > ul.steps > li {
+  border-left: 2em solid transparent;
+  border-top: 2em solid #fff;
+  border-bottom: 2em solid #fff;
+  width: 13.9%;
+}
+
+.vet div.steps-row > ul.steps > li:after {
+  border-bottom: 2em solid transparent;
+  border-left: 2em solid #fff;
+  border-top: 2em solid transparent;
+}
+
+.vet div.steps-row > ul.steps > li > a {
+  background-color: #fff;
+  color: #99b5c3;
+  font-family: "Brandon Grotesque";
+}
+
+.vet div.steps-row > ul.steps > li > a:before {
+  background-color: #99b5c3;
+  color: #f5f5f5;
+  content: "Step " counter(step);
+}
+
+.vet div.steps-row > ul.steps > li:first-child {
+  border-left: 0em solid #f5f5f5;
+}
+
+.vet div.steps-row > ul.steps > li:last-child:after {
+  border: 0px solid transparent;
+}
+
+.vet div.steps-row > ul.steps > li.ui-state-selected {
+  border-top-color: #00303C;
+  border-bottom-color: #00303C;
+}
+
+.vet div.steps-row > ul.steps > li.ui-state-selected > a {
+  background-color: #00303C;
+  color: #f5f5f5;
+}
+
+.vet div.steps-row > ul.steps > li.ui-state-selected > a:before {
+  background-color: #00303C;
+  color: #ffffff;
+}
+
+.vet div.steps-row > ul.steps > li.ui-state-selected:after {
+  border-left-color: #00303C;
+}
+
+.vet div.steps-row > ul.steps > li.ui-state-selected:first-child {
+  border-left-color: #00303C;
+}
+
+.vet div.steps-row > ul.steps > li.ui-state-selected:last-child:after {
+  border-top-color: #00303C
+  border-bottom-color: #00303C;
+}
+
+.vet div.steps-row > ul.steps > li.ui-state-disabled {
+  border-top-color: #f5f5f5;
+  border-bottom-color: #f5f5f5;
+}
+
+.vet div.steps-row > ul.steps > li.ui-state-disabled > a {
+  background-color: #f5f5f5;
+  color: #00303C;
+}
+
+.vet div.steps-row > ul.steps > li.ui-state-disabled > a:before {
+  background-color: #f5f5f5;
+  color: #00303C;
+}
+
+.vet div.steps-row > ul.steps > li.ui-state-disabled:after {
+  border-left-color: #f5f5f5;
+}
+
+.vet div.steps-row > ul.steps > li.ui-state-disabled:first-child {
+  border-left-color: #f5f5f5;
+}
+
+.vet div.steps-row > ul.steps > li.ui-state-disabled:last-child:after {
+  border-top-color: #f5f5f5;
+  border-bottom-color: #f5f5f5;
+}
+
+.vet div.steps-row > ul.steps > li.ui-state-completed > a:before {
+  background-color: #99b5c3;
+  color: #f5f5f5;
+  content: "\2713";
+}
+
+.vet .modal-dialog .modal-header {
+  background-color: #00303C;
+}
+
+.vet .modal-dialog .modal-header h5 {
+  font-size: 24px;
+}
+
+.vet .modal-dialog .modal-header .glyphicon-remove {
+  top: 8px;
+}
+
+.vet .modal-dialog .modal-footer a {
+  font-family: "Brandon Grotesque";
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 15px
+}
+
+.vet.\.modal-dialog.\.modal-footer {
+  padding: 8px 15px;
+  text-align: right;
+}
+
+.vet.\.modal-dialog.\.modal-footer a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Brandon Grotesque";
+}
+
+.vet.\.modal-dialog.\.modal-footer .btn {
+  margin-left: 15px;
+}

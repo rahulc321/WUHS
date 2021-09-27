@@ -1,0 +1,806 @@
+﻿body
+{
+	background-image: url('../images/browser-bg-blue.jpg');
+	background-position: left -103px;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+select
+{
+	border-color: #CCC;
+}
+
+::-ms-clear
+{
+	display: none;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	color: #005696;
+    font-weight: bold;
+}
+
+h1, .h1, h2, .h2, h3, .h3
+{
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+p
+{
+    margin-bottom: 20px;
+}
+
+.table
+{
+    border-bottom: 1px solid #DDD;
+}
+
+.table-colleges td
+{
+    vertical-align: middle !important;
+    white-space: nowrap;
+}
+
+.text-light
+{
+    color: #AAA;
+}
+
+label > input[type=radio]
+{
+	height: 1.5em;
+	margin-top: 0px;
+}
+
+.label-subtext
+{
+    color: #AAA;
+    margin-top: -3px;
+    margin-bottom: 5px;
+}
+
+.form-group
+{
+	margin-bottom: 20px;
+}
+
+.form-group > label
+{
+	display: block;
+}
+
+.form-group > label.radio-inline, .form-group > label.checkbox-inline
+{
+	display: inline-block;
+}
+
+.text-right > .btn
+{
+    margin-left: 8px;
+}
+
+.btn-group[dropdown]
+{
+	width: 100%;
+}
+
+.btn-group[dropdown] > button
+{
+    overflow: hidden;
+    padding-right: 22px;
+	text-align: left;
+    text-overflow: ellipsis;
+	width: 100%;
+}
+
+.input-group-btn .btn-group[dropdown] > button
+{
+	width: auto;
+}
+
+.btn-group[dropdown] > button > span.caret
+{
+	position: absolute;
+	right: 8px;
+	top: 50%;
+	margin-top: -3px;
+}
+
+.form-inline .btn-group[dropdown]
+{
+	width: auto;
+}
+
+.form-inline .form-control
+{
+	display: inline-block;
+}
+
+.input-group .input-group-btn:first-child button
+{
+	border-right: 0px;
+}
+
+select::-ms-expand
+{
+	background-color: transparent;
+	background-image: url('../images/downarrow.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	border: 0px solid transparent;
+	color: transparent;
+	margin-left: 8px;
+	width: 6px;
+}
+
+div.container
+{
+	background-color: #FFF;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+}
+
+div.row
+{
+	background-color: #FFF;
+}
+
+.dropdown-menu
+{
+	max-height: 300px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.btn .caret
+{
+	margin-left: 6px;
+	margin-top: -1px;
+}
+
+.text-danger
+{
+	color: #C00;
+}
+
+
+/* Header */
+
+div.header-row
+{
+    font-size: 13px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+div.header-row a
+{
+	display: inline-block;
+}
+
+div.header-row img
+{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+div.header-row ul
+{
+    color: #428bca;
+}
+
+div.header-row li.chat-icon
+{
+	background-image: url('../images/chat.png');
+	background-position: left center;
+	background-repeat: no-repeat;
+	height: 20px;
+	line-height: 20px;
+	margin-left: 6px;
+	padding-left: 24px;
+}
+
+div.header-row li.phone-icon
+{
+	background-image: url('../images/phone.png');
+	background-position: left center;
+	background-repeat: no-repeat;
+	height: 20px;
+	line-height: 20px;
+	margin-left: 6px;
+	padding-left: 24px;
+}
+
+@media (max-width: 650px)
+{
+	div.header-row > div > a
+	{
+		width: 60px;
+		overflow: hidden;
+	}
+}
+
+
+/* Steps */
+
+div.steps-row
+{
+	background-color: #EEE;
+	border-bottom: 1px solid #DDD;
+	border-top: 1px solid #DDD;
+	min-height: 6px;
+}
+
+div.steps-row > ul.steps
+{
+	counter-reset: step;
+	line-height: 1px;
+	list-style-type: none;
+	margin: 10px 15px;
+	padding: 0px;
+}
+
+div.steps-row > ul.steps > *
+{
+	width: 0px;
+}
+
+div.steps-row > ul.steps > li
+{
+	border-left: 2em solid transparent;
+	border-top: 2em solid #FFF;
+	border-bottom: 2em solid #FFF;
+	counter-increment: step;
+	float: left;
+	height: 0px;
+	margin: 0px;
+	margin-left: 0.4%;
+	padding: 0px;
+	position: relative;
+	width: 19.59%;
+}
+
+div.steps-row > ul.steps > li:after
+{
+	border-bottom: 2em solid transparent;
+	border-left: 2em solid #FFF;
+	border-top: 2em solid transparent;
+	content: "";
+	height: 0px;
+	display: inline-block;
+	position: absolute;
+	right: -2em;
+	top: -2em;
+	width: 0px;
+}
+
+div.steps-row > ul.steps > li > a
+{
+	background-color: #FFF;
+	color: #777;
+	display: inline-block;
+	font-size: 15px;
+	line-height: 2.95em;
+	overflow: hidden;
+	padding-left: 1.25em;
+	padding-right: 0em;
+	position: relative;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	top: -1.5em;
+	vertical-align: top;
+	white-space: nowrap;
+	width: 100%;
+}
+
+div.steps-row > ul.steps > li > a:before
+{
+	background-color: #005696;
+	border-radius: 16px;
+	color: #FFF;
+	content: counter(step);
+	display: inline-block;
+    font-size: 18px;
+	font-weight: bold;
+	height: 32px;
+	line-height: 32px;
+	margin-right: 8px;
+	margin-top: -2px;
+	padding-right: 1px;
+	text-align: center;
+	vertical-align: middle;
+	width: 32px;
+}
+
+div.steps-row > ul.steps > li:first-child
+{
+	border-left: 0em solid #FFF;
+	border-radius: 5px 0px 0px 5px;
+	margin-left: 0%;
+}
+
+div.steps-row > ul.steps > li:last-child
+{
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+div.steps-row > ul.steps > li:last-child:after
+{
+	border: 0px solid transparent;
+}
+
+div.steps-row > ul.steps > li:last-child > a
+{
+	padding-right: 2em;
+}
+
+div.steps-row > ul.steps > li.ui-state-selected
+{
+	border-top-color: rgb(214,159,15);
+	border-bottom-color: rgb(214,159,15);
+}
+
+div.steps-row > ul.steps > li.ui-state-selected > a
+{
+	background-color: rgb(214,159,15);
+	color: #FFF;
+}
+
+div.steps-row > ul.steps > li.ui-state-selected > a:before
+{
+	background-color: #FFF;
+	color: rgb(214,159,15);
+}
+
+div.steps-row > ul.steps > li.ui-state-selected:after
+{
+	border-left-color: rgb(214,159,15);
+}
+
+div.steps-row > ul.steps > li.ui-state-selected:first-child
+{
+	border-left-color: rgb(214,159,15);
+}
+
+div.steps-row > ul.steps > li.ui-state-selected:last-child:after
+{
+	border-top-color: rgb(214,159,15);
+	border-bottom-color: rgb(214,159,15);
+}
+
+div.steps-row > ul.steps > li.ui-state-completed > a:before
+{
+	background-color: #005696;
+	color: #FFF;
+	content: "\2713";
+	font-style: normal;
+	font-size: 18px;
+}
+
+@media (max-width: 650px)
+{
+	div.steps-row > ul.steps > li
+	{
+		width: 22.6%;
+	}
+
+	div.steps-row > ul.steps > li.ui-state-selected
+	{
+		width: 53.6%;
+	}
+}
+
+
+/* Modal Dialogs */
+
+.modal-dialog
+{
+	left: 50%;
+	position: fixed;
+	top: 26%;
+}
+
+.modal-dialog .modal-content
+{
+	background-color: #F8F8F8;
+	border: 1px solid #DDD;
+	border-radius: 5px;
+}
+
+.modal-dialog .modal-header
+{
+	background-color: #005696;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin: -1px;
+	padding: 8px 15px;
+}
+
+.modal-dialog .modal-header h5, .modal-dialog .modal-header a
+{
+	color: #FFF;
+}
+
+.modal-dialog .modal-body
+{
+	color: #000;
+}
+
+.modal-dialog .modal-body > :last-child
+{
+    margin-bottom: 0px;
+}
+
+.modal-dialog .modal-body p.phone-text
+{
+    font-family: Candara, Georgia, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.modal-dialog .modal-footer
+{
+	background-color: #EEE;
+	padding: 8px 15px;
+}
+
+.modal-dialog .modal-footer > a, .modal-dialog .modal-footer > button
+{
+	margin-left: 15px;
+}
+
+.sign-in .modal-dialog
+{
+	margin-left: -170px;
+	margin-top: -170px;
+	width: 340px;
+}
+
+.create-account .modal-dialog
+{
+	margin-left: -300px;
+	margin-top: -170px;
+	width: 600px;
+}
+
+.loading .modal-dialog
+{
+	margin-left: -170px;
+	margin-top: -35px;
+	width: 340px;
+}
+
+.intl-app .modal-dialog
+{
+	margin-left: -170px;
+	margin-top: -74px;
+	width: 340px;
+}
+
+
+/* Content */
+
+.form-inline > :not(:first-child)
+{
+	margin-left: 10px;
+}
+
+h3.required:after
+{
+    color: #AAA;
+    content: "* Indicates a required field";
+    float: right;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: normal;
+    padding-right: 4px;
+}
+
+label.optional:after
+{
+	color: #AAA;
+	content: "(Optional)";
+    font-size: 12px;
+    font-weight: normal;
+	margin-left: 4px;
+}
+
+label.required:after
+{
+	color: #AAA;
+	content: "*";
+	margin-left: 4px;
+}
+
+hr
+{
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+ul.nav-tabs > li > a
+{
+    color: #CCC;
+    cursor:  pointer;
+}
+
+div.tab-content
+{
+    border-left: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+}
+
+div.tab-content > div.active
+{
+    min-height: 320px;
+    background-color: #FCFCFC;
+}
+
+ul.nav-tabs > li.active > a
+{
+    background-color: #FCFCFC;
+    color: #000;
+}
+
+ul.nav-tabs > li > a:hover
+{
+	background-color: #FFF;
+	text-shadow: 0em 0em 0.5em #666;
+	color: black;
+}
+
+ul.nav-tabs > li.active > a:hover
+{
+    background-color: #FCFCFC;
+	text-shadow: none;
+	color: black;
+}
+
+
+/* DatePicker Styles*/
+
+[datepicker] table
+{
+	outline: 0px;
+}
+
+[datepicker] table button
+{
+    background: white;
+    border: 0px solid transparent;
+    box-shadow: none;
+    padding: 4px 8px;
+}
+
+[datepicker] table button span.text-muted
+{
+    color: #CCC;
+}
+
+
+/* Form Validation */
+
+.form-control.ng-dirty.ng-invalid,
+.submit-failed .form-control.ng-invalid
+{
+	border-color: #C07070;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(192, 112, 112, .6);
+}
+
+div[dropdown].ng-dirty.ng-invalid > button,
+.submit-failed div.btn-group.ng-invalid > button
+{
+	border-color: #C07070;
+	outline: 0;
+}
+
+.submit-failed div.btn-group.ng-invalid
+{
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(192, 112, 112, .6);
+}
+
+.submit-failed div.btn-group.ng-invalid > label
+{
+	border-bottom-color: #C07070;
+	border-top-color: #C07070;
+}
+
+.submit-failed div.btn-group.ng-invalid > label:first-child
+{
+	border-left-color: #C07070;
+}
+
+.submit-failed div.btn-group.ng-invalid > label:last-child
+{
+	border-right-color: #C07070;
+}
+
+.panel
+{
+	background-color: #F2F2F2;
+	border: 1px solid #D8D8D8;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	padding: 8px;
+	padding-right: 32px;
+}
+
+.panel > :first-child
+{
+	margin-top: 0px;
+}
+
+.panel > :last-child
+{
+	margin-bottom: 0px;
+}
+
+.panel.panel-error
+{
+	background-color: rgba(192, 64, 64, .15);
+	border-color: #C04040;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(192, 64, 64, .6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(192, 64, 64, .6);
+	color: #C04040;
+}
+
+.panel.panel-success
+{
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #3c763d;
+}
+
+
+/* Password Policies */
+
+
+ul.policy-outcomes > li
+{
+	line-height: 24px;
+	padding-left: 1.5em;
+	position: relative;
+}
+
+ul.policy-outcomes > li.valid
+{
+    color: green;
+}
+
+ul.policy-outcomes > li.valid:before
+{
+    content: "\2713";
+    font-size: 16px;
+	left: 0px;
+	margin-top: -2px;
+	position: absolute;
+	top: 0px;
+}
+
+ul.policy-outcomes > li.invalid
+{
+    color: #C00;
+}
+
+ul.policy-outcomes > li.invalid:before
+{
+    content: "\2717";
+    font-size: 18px;
+	left: 0px;
+	margin-top: -2px;
+	position: absolute;
+	top: 0px;
+}
+
+ul.policy-outcomes > li > ul
+{
+	padding-left: 1.5em;
+}
+
+
+/* Navigation */
+
+div.nav-row
+{
+	background-color: #F2F2F2;
+	border-bottom: 1px solid #CCC;
+	border-top: 1px solid #DDD;
+    padding: 10px 0px;
+}
+
+div.nav-row.nav-row-empty
+{
+	background-color: #CCC;
+	border-bottom: 1px solid #CCC;
+	border-top: 1px solid #CCC;
+	min-height: 6px;
+    padding: 0px;
+}
+
+div.nav-row .disclaimer
+{
+    font-size: 13px;
+}
+
+div.nav-row .pull-right
+{
+    margin-left: 10px;
+}
+
+div.nav-row .pull-right button
+{
+    margin-left: 10px;
+}
+
+
+/* Footer */
+
+div.footer-row
+{
+	border-bottom: 1px solid #CCC;
+}
+
+div.footer-row p
+{
+	font-size: 12px;
+	margin: 10px 0px;
+}
+
+
+/* Overlay */
+
+div.overlay
+{
+	background-color: black;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.3;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 1000;
+}
+
+div.overlay > img
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -10px;
+	z-index: 1001;
+}
+
+
+/* Placeholders */
+
+::-webkit-input-placeholder
+{
+	color: #CCC !important;
+}
+
+:-moz-placeholder
+{ /* Firefox 18- */
+	color: #CCC !important;
+}
+
+::-moz-placeholder
+{ /* Firefox 19+ */
+	color: #CCC !important;
+}
+
+:-ms-input-placeholder
+{
+	color: #CCC !important;
+}

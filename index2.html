@@ -1,0 +1,2334 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  
+<!-- Mirrored from medical.rossu.edu/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Apr 2021 06:14:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"c357dda42d",applicationID:"321930597"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(7),c=e(8),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(9);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e){return!(!e||!e.protocol||"file:"===e.protocol)}t.exports=r},{}],4:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(6),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],5:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],6:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],7:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],8:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],9:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(7),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=x.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+x.offset],null,"api"),c("timing",["load",n]);var r=l.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+x.offset],null,"api")}var a=e(2),c=e("handle"),f=e(7),u=e("ee"),s=e(5),d=e(3),p=window,l=p.document,m="addEventListener",v="attachEvent",g=p.XMLHttpRequest,w=g&&g.prototype;if(d(p.location)){NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:g,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1208.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:b,userAgent:s};e(1),e(4),l[m]?(l[m]("DOMContentLoaded",o,!1),p[m]("load",r,!1)):(l[v]("onreadystatechange",i),p[v]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0}},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(8),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<script>window.dataLayer = window.dataLayer || []; window.dataLayer.push({"drupalLanguage":"en","drupalCountry":"","siteName":"Ross University School of Medicine","entityLangcode":"en","entityVid":"44941","entityUid":"1","entityCreated":"1554746333","entityStatus":"1","entityType":"node","entityBundle":"page","entityId":"1","entityTitle":"Home","userUid":0,"institution":"Ross University School of Medicine","environment":"Production"});</script>
+<link rel="stylesheet" href="modules/contrib/d8_google_optimize_hide_page/d8_google_optimize_hide_page.css" />
+
+<script src="d8_google_optimize_hide_page/snippet"></script>
+<script src="sites/g/files/krcnkv261/files/google_tag/ross_med_default/google_tag.script7422.js?qrgqy9" defer></script>
+<script src="../cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-domain-script="0efa9c34-3840-4c58-a0de-4972a65cf45d" defer></script>
+<link rel="shortlink" href="index.html" />
+<link rel="canonical" href="index.html" />
+
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "CollegeOrUniversity",
+            "@id": "https://medical.rossu.edu/",
+            "description": "Founded in 1978, Ross University School of Medicine has been providing students with the foundation they need to pursue successful careers in medicine for nearly 40 years. The Ross medical school experience is “Dedita Scientiae Medendi” – dedicated to the science of healing – and we are proud of our rich tradition of preparing students for their life’s work as physicians.",
+            "name": "Ross University School of Medicine",
+            "url": "https://medical.rossu.edu/",
+            "sameAs": "https://twitter.com/RossMedSchool,https://www.facebook.com/RossMedSchool,https://www.youtube.com/user/RossMedSchool,https://www.instagram.com/rossmedschool/",
+            "telephone": "75477075547",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://medical.rossu.edu/themes/custom/rum_base/images/logo-footer.jpg"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "2300 SW 145th Avenue, Suite 200",
+                "addressLocality": "Miramar",
+                "postalCode": "33027",
+                "addressCountry": "United States"
+            }
+        }
+    ]
+}</script>
+<link rel="preload" href="themes/custom/rum_base/fonts/rockwell/f60b9b8c-1fb9-43fc-a776-1ed969eec0b6.html" as="font" crossorigin="anonymous" />
+<link rel="preload" href="themes/custom/rum_base/fonts/rum-icomoon/fonts/rum-icomoon4091.html?y16ofo" as="font" crossorigin="anonymous" />
+<link rel="preload" href="themes/custom/rum_base/fonts/rum-icomoon/fonts/rum-icomooncf41.html?ql7to1" as="font" crossorigin="anonymous" />
+<link rel="preload" href="themes/custom/rum_base/fonts/helvetica-neue/08b57253-2e0d-4c12-9c57-107f6c67bc49.html" as="font" crossorigin="anonymous" />
+<link rel="preload" href="themes/custom/rum_base/fonts/helvetica-neue/800da3b0-675f-465f-892d-d76cecbdd5b1.html" as="font" crossorigin="anonymous" />
+<link rel="shortcut icon" href="themes/custom/rum_base/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="revision" href="index.html" />
+
+    <title>Washington University of Health and Science</title>
+	<link rel="stylesheet" media="all" href="css/new.min.css" />
+    <link rel="stylesheet" media="all" href="sites/g/files/krcnkv261/files/css/css_9qXp7sDgfebnHM4-BAKXz2DLLW19EOuI3-natQ6vW9Y.css" />
+<link rel="stylesheet" media="all" href="sites/g/files/krcnkv261/files/css/css_O0PnYZ5ux66KWgNNcqpUzUQT3O1fyLA0cl27JGXmR-4.css" />
+
+    
+
+<!--[if lte IE 8]>
+<script src="/sites/g/files/krcnkv261/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+<script src="sites/g/files/krcnkv261/files/js/js_6Q1vPz50-Ilt7QwIkxruuQP5KmOFvD1_aN4vvwBy_l0.js"></script>
+
+  </head>
+  <body class="path-frontpage page-node-type-page">
+        <a role="navigation" aria-label="skip-to-main-content" href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P23DMCS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    	<div class="layout-container">
+   <!--header-->
+   <header role="banner" class="page--header">
+			
+    <div class="region region__mobile">
+        <div class="menu__mobile--wrapper">
+             <div class="menu__mobile--header">
+                <div class="flexrow">
+                    <div id="block-rum-base-branding" data-block-plugin-id="system_branding_block" class="block block-system block-system-branding-block block__site-logo region--header">
+                            <a href="index.html" title="Home" rel="home" class="e-logo" onClick="Drupal.behaviors.atgeAnalytics.navClick('Header', 'logo')">
+                            <img src="images/logo.png" alt="Home" />
+                            </a>
+                        </div>
+                    <div class="flexitem header--mobile-menu">
+                            <div class="menu-button">
+                              <span class="e-icon icon-rum-menu"></span>
+                              <span>Menu</span>
+                            </div>
+                    </div>
+                </div>
+
+             </div>
+
+            <div class="menu__mobile--content mobile-menu-closed">
+                <div class="menu__mobile--search">
+                        <div class="views-exposed-form block block-views block__views-exposed-filter-blockacquia-search-page">
+                              <form region="mobile" action="#" method="get" id="views-exposed-form-acquia-search-pagemobile" accept-charset="UTF-8">
+                              <div class="form--inline clearfix">
+                                <div class="js-form-item form-item form--item js-form-type-textfield form-type-textfield js-form-item-search form-item-search">
+                                  <label for="edit-search">Search</label>
+                                  <input data-drupal-selector="edit-search" type="text" id="edit-search" name="search" value="" size="30" maxlength="128" class="form-text" aria-label="search" />
+                                </div>
+                                <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input class="e-btn--primary button js-form-submit form-submit" data-drupal-selector="edit-submit-acquia-search" type="submit" id="edit-submit-acquia-search" value="Search" />
+                                </div>
+                              </div>
+                              </form>
+                        </div>
+                </div>
+            <div class="menu__mobile--content-inner">
+                    <div class="menu__mobile--main">
+                          <nav aria-labelledby="block-mobilenavigation-menu" id="block-mobilenavigation" data-block-plugin-id="system_menu_block:main" class="block block-menu navigation menu__main--mobile">            
+                          <h3 class="visually-hidden" id="block-mobilenavigation-menu">Mobile navigation</h3>
+                          <ul region="mobile" class="menu menu__accordion--items menu__accordion--parent">
+                          <li class="menu-item menu__accordion--item menu-item--expanded">
+                                <a href="admissions.html" class="menu__accordion--link">Admissions</a>
+                                       <span class="menu__accordion--icon icon-rum-plus"></span>                  
+                                       <ul region="mobile" class="menu menu__accordion--items menu__accordion--subnav-1">           
+                                       <li class="menu-item menu__accordion--item">                        
+                                        <a href="admissions-overview.html">Admissions Overview </a>    
+                                        </li>       
+                                        <li class="menu-item menu__accordion--item">                        
+                                        <a href='admissions/how-to-apply.html'>How To Apply<span class="caret"></span></a>       
+                                        </li>
+                                        <li class="menu-item menu__accordion--item">                        
+                                        <a href="admissions/start-your-career.html" class="menu__accordion--link">Start Your Career</a>       
+                                        </li> 										
+                                        <li class="menu-item menu__accordion--item">
+                                        <a href="admissions/admissions-requirements.html" class="menu__accordion--link">Admissions Requirements</a>
+                                        </li>
+                                        <li class="menu-item menu__accordion--item">
+                                        <a href="admissions/admission-process.html" class="menu__accordion--link">Admission Process</a>
+                                        </li>
+                                        <li class="menu-item menu__accordion--item menu-item--collapsed">
+                                        <a href="admissions/tuition-and-fees.html" class="menu__accordion--link">Tuition and Fees</a>
+                                        </li>
+										<li class="menu-item menu__accordion--item menu-item--collapsed">
+                                        <a href="admissions/scholarships.html" class="menu__accordion--link">Scholarships</a>
+                                        </li>                                        
+                                        <li class="menu-item menu__accordion--item">
+                                        <a href="admissions/canadian-loans.html" class="menu__accordion--link">Canadian Loans</a>
+                                        </li>
+                                        <li class="menu-item menu__accordion--item">
+                                        <a href="admissions/payment-plans.html" class="menu__accordion--link" >Payment Plans </a>
+                                        </li>
+                                        <li class="menu-item menu__accordion--item">
+                                        <a href="admissions/merchant-information.html" class="menu__accordion--link">Merchant Information </a>
+                                        </li>
+                                        <li class="menu-item menu__accordion--item">
+                                        <a href="admissions/finance-options.html" class="menu__accordion--link" >Finance Options </a>
+                                        </li>
+                                        <li class="menu-item menu__accordion--item">
+                                        <a href="admissions/transcript-request.html" class="menu__accordion--link" >Transcript Request</a>
+                                        </li>
+                                       </ul>
+                            </li>
+                            <li class="menu-item menu__accordion--item menu-item--expanded">                        
+                                <a href="md-program.html" class="menu__accordion--link" >Academic</a>
+                                <span class="menu__accordion--icon icon-rum-plus"></span>
+                                <ul region="mobile" class="menu menu__accordion--items menu__accordion--subnav-1">
+                                      <li class="menu-item menu__accordion--item">
+                                      <a href="academic-overview.html" class="menu__accordion--link" >Academic Overview</a>
+                                      </li>
+                                      <li class="menu-item menu__accordion--item">
+                                      <a href="md-program/pre-medical.html" class="menu__accordion--link">Pre-Medical Program</a>
+                                      </li>
+                                      <li class="menu-item menu__accordion--item menu-item--collapsed">
+                                      <a href="md-program/basic-science.html" class="menu__accordion--link">Pre-Clinical  Program</a>
+                                      </li>
+                                      <li class="menu-item menu__accordion--item">
+                                      <a href="md-program/md-program.html" class="menu__accordion--link">MD Program</a>
+                                      </li>
+									  <li class="menu-item menu__accordion--item menu-item--collapsed">
+									  <a href="md-program/clinical-sciences.html" class="menu__accordion--link">Curriculum</a>
+									  </li>
+									  <li class="menu-item menu__accordion--item menu-item--collapsed">
+									  <a href="md-program/clinical-rotations.html" class="menu__accordion--link" >Clinical Rotations</a>
+									  </li>
+									  <li class="menu-item menu__accordion--item menu-item--collapsed">
+									  <a href="md-program/clinical-experience.html" class="menu__accordion--link" >Clinical Experience</a>
+									  </li>
+									  <li class="menu-item menu__accordion--item menu-item--collapsed">
+									  <a href="md-program/foundational-training.html" class="menu__accordion--link" >Foundational Training</a>
+									  </li>
+									  <li class="menu-item menu__accordion--item menu-item--collapsed">
+									  <a href="md-program/research.html" class="menu__accordion--link" >Research</a>
+									  </li>
+									  <li class="menu-item menu__accordion--item menu-item--collapsed">
+									  <a href="md-program/academic-calendar.html" class="menu__accordion--link" >Academic Calendar</a>
+									  </li>
+									  <li class="menu-item menu__accordion--item menu-item--collapsed">
+									  <a href="md-program/faculty.html" class="menu__accordion--link" >Faculty</a>
+									  </li>
+							    </ul>
+						    </li>
+							<li class="menu-item menu__accordion--item menu-item--expanded">
+							     <a href="student-life.html" class="menu__accordion--link" >Student</a>
+								 <span class="menu__accordion--icon icon-rum-plus"></span>
+								 <ul region="mobile" class="menu menu__accordion--items menu__accordion--subnav-1">
+								 <li class="menu-item menu__accordion--item">
+								 <a href="student-life.html" class="menu__accordion--link" >Student Life Overview</a>
+								 </li>
+								 <li class="menu-item menu__accordion--item menu-item--collapsed">
+								 <a href="student-life/return-to-campus.html" class="menu__accordion--link">Return to Campus</a>
+								 </li>
+								 <li class="menu-item menu__accordion--item">
+								 <a href="student-life/housing.html" class="menu__accordion--link" >Housing</a>
+								 </li>
+								 <li class="menu-item menu__accordion--item">
+								 <a href="student-life/barbados.html" class="menu__accordion--link" >Barbados</a>
+								 </li>
+								 <li class="menu-item menu__accordion--item">
+								 <a href="student-life/campusservices.html" class="menu__accordion--link" >Campus Services</a>
+								 </li>
+								 <li class="menu-item menu__accordion--item">
+								 <a href="student-life/white-coat-ceremony.html" class="menu__accordion--link" >White Coat Ceremony</a>
+								 </li>
+								 <li class="menu-item menu__accordion--item">
+								 <a href="student-life/clubs-and-organizations.html" class="menu__accordion--link" >Clubs and Organizations</a>
+								 </li>
+								 <li class="menu-item menu__accordion--item menu-item--collapsed">
+								 <a href="student-life/safety-and-security.html" class="menu__accordion--link" >Safety &amp; Security</a>
+								 </li>
+								 <li class="menu-item menu__accordion--item">
+								 <a href="https://rossmed.overturestore.com/default.aspx" class="menu__accordion--link">Merchandise Store</a>
+								 </li>
+								 </ul>
+  
+                            </li>
+		                    <li class="menu-item menu__accordion--item menu-item--expanded">                        
+                                 <a href="about.html" class="menu__accordion--link" >Accreditation</a>
+								 <span class="menu__accordion--icon icon-rum-plus"></span>
+								 <ul region="mobile" class="menu menu__accordion--items menu__accordion--subnav-1">
+								 <li class="menu-item menu__accordion--item">
+								 <a href="about.html" class="menu__accordion--link" >About Overview</a>
+								 </li>
+								 <li class="menu-item menu__accordion--item">
+								 <a href="about/accreditation-and-approvals.html" class="menu__accordion--link">Accreditation and Approvals</a>
+								 </li>
+								 <li class="menu-item menu__accordion--item">
+								 <a href="about/faq.html" class="menu__accordion--link" >Faq</a>
+								 </li>
+								 <li class="menu-item menu__accordion--item">
+								 <a href="about/facts-and-figures.html" class="menu__accordion--link" >Facts and Figures</a>
+								 </li>
+								 <li class="menu-item menu__accordion--item">
+								 <a href="diversity-and-inclusion.html" class="menu__accordion--link" >Diversity &amp; Inclusion</a>
+								 </li>
+								 <li class="menu-item menu__accordion--item menu-item--collapsed">
+								 <a href="about/information-by-state.html" class="menu__accordion--link" >Information By State</a>
+								 </li>
+                               </ul>
+  
+                </li>
+    
+      
+                <li class="menu-item menu__accordion--item menu-item--expanded">                        
+                 <a href="about.html" class="menu__accordion--link" >About</a>
+                           <span class="menu__accordion--icon icon-rum-plus"></span>
+                              <ul region="mobile" class="menu menu__accordion--items menu__accordion--subnav-1">
+                                  <li class="menu-item menu__accordion--item">
+								  <a href="about.html" class="menu__accordion--link">About Overview</a>
+								  </li>
+								  <li class="menu-item menu__accordion--item">
+								  <a href="about/accreditation-and-approvals.html" class="menu__accordion--link" >Accreditation and Approvals</a>
+								  </li>
+                              </ul>
+                </li>
+           <li class="menu-item menu__accordion--item menu-item--expanded large-only">
+		              <a href="admissions/how-to-apply.html" class="menu__accordion--link" > Apply Now </a>
+        					  <span class="menu__accordion--icon icon-rum-plus"></span>
+							        <ul region="mobile" class="menu menu__accordion--items menu__accordion--subnav-1">
+									     <li class="menu-item menu__accordion--item">
+										 <a href="#" class="menu__accordion--link" >Start Your Application</a>
+										 </li>
+										 <li class="menu-item menu__accordion--item">
+										 <a href="#" class="menu__accordion--link" >Continue Your Application</a>
+										 </li>
+                                    </ul>
+  
+            </li>
+    
+      
+            <li class="menu-item menu__accordion--item large-only">
+			        <a href="contact-admissions.html" class="menu__accordion--link" >Request Info</a>
+					   <span class="menu__accordion--icon icon-rum-chevron-thin-right no-children"></span>
+                  
+              </li>
+        </ul>
+    </nav>
+    </div>
+          
+            <div class="menu__mobile--social-media">
+			   <nav aria-labelledby="block-socialmedianavigation-2-menu" id="block-socialmedianavigation-2" data-block-plugin-id="menu_block:social-media" class="block block-menu navigation menu--social-media c-sidebar c-rum-sidebar c-sidebar__menu c-rum-sidebar__menu">
+			        <h3 class="visually-hidden" id="block-socialmedianavigation-2-menu">Social Media Navigation</h3>
+					    <div class="p-sidebar__menu--content p-rum-sidebar__menu--content">
+						     <ul class="menu menu--social-media">
+							    <li class="menu-item">
+								  <a href="#" class="icon-link">Facebook</span><span class="icon icon--facebook"></span></a>
+								</li>
+								<li class="menu-item">
+                                 <a href="#" class="icon-link"><span class="visually-hidden">LinkedIn</span><span class="icon icon--linkedin"></span>
+                                  </a>
+                                </li>
+								<li class="menu-item">
+                                    <a href="#" class="icon-link" a rel="nofollow" target="_blank" title="Twitter"><span class="visually-hidden">Twitter</span>
+                                    <span class="icon icon--twitter"></span>
+                                     </a>
+                                 </li>
+								 <li class="menu-item">
+                                    <a href="#" class="icon-link" aria-label="Instagram" data-gtm="social" data-click-action="link" data-click-label="Instagram" rel="nofollow" target="_blank" title="Instagram">          <span class="visually-hidden">Instagram</span>
+                                    <span class="icon icon--instagram"></span>
+                                       </a>
+                                </li>
+								<li class="menu-item">
+                                  <a href="#" class="icon-link" aria-label="YouTube" data-gtm="social" data-click-action="link" data-click-label="YouTube" rel="nofollow" target="_blank" title="YouTube">          <span class="visually-hidden">YouTube</span>
+                                  <span class="icon icon--youtube"></span>
+                                   </a>
+                                 </li>
+                              </ul>
+    </div>
+   </nav>
+   </div>
+
+    <div class="menu__mobile--utility">
+              
+
+<nav aria-labelledby="block-mobileutility-menu" id="block-mobileutility" data-block-plugin-id="menu_block:utility" class="block block-menu navigation menu--utility menu__utility--mobile">
+            
+  <h3 class="visually-hidden" id="block-mobileutility-menu">Utility Navigation</h3>
+  
+
+        
+              <ul region="mobile" class="menu">
+              
+            <li class="menu-item menu-item--collapsed">
+                                <a href="admitted-students.html" onClick="Drupal.behaviors.atgeAnalytics.navClick(&#039;Header&#039;, &#039;Admitted Students&#039;)" data-drupal-link-system-path="node/2381">Admitted Students</a>
+              </li>
+          
+            <li class="menu-item menu-item--collapsed">
+                                <a href="alumni.html" onClick="Drupal.behaviors.atgeAnalytics.navClick(&#039;Header&#039;, &#039;Alumni&#039;)" data-drupal-link-system-path="node/706">Alumni</a>
+              </li>
+          
+            <li class="menu-item small-only">
+                                <a href="admissions/how-to-apply.html" class="menu-cta-link" title="Apply Now" onClick="Drupal.behaviors.atgeAnalytics.navClick(&#039;Header&#039;, &#039;Apply Now&#039;)" data-drupal-link-system-path="node/2291">Apply Now</a>
+              </li>
+          
+            <li class="menu-item small-only">
+                                <a href="contact-admissions.html" class="menu-cta-link" title="Info Session" onClick="Drupal.behaviors.atgeAnalytics.navClick(&#039;Header&#039;, &#039;Request Info&#039;)" data-drupal-link-system-path="node/2336">Request Info</a>
+              </li>
+        </ul>
+  
+
+
+  
+</nav>
+
+
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  
+    </div>
+  
+			
+	<!--menu-->		
+    <div class="region region__header">
+            <div class="grid__container">
+                  <div class="grid__container--items">
+                  <div class="flexrow">
+                      <div class="flexitem">
+                         <div id="block-rum-base-branding" data-block-plugin-id="system_branding_block" class="block block-system block-system-branding-block block__site-logo region--header">
+                           <a href="index.html" title="Home" rel="home" class="e-logo" onClick="Drupal.behaviors.atgeAnalytics.navClick('Header', 'logo')">
+                           <img class="two" loading="lazy" src="images/logo.png" alt="Home" width="150" height="50"/>
+                           </a>
+                        </div>
+                      </div>
+                    <div class="flexitem">
+                    <div class="items-inline">
+                        <nav aria-labelledby="system-menu-blocksecondary-block-secondarynavigation-header" id="block-secondarynavigation" data-block-plugin-id="system_menu_block:secondary" class="block block-menu navigation menu--secondary">
+                            <h3 class="visually-hidden" id="system-menu-blocksecondary-block-secondarynavigation-header">Secondary Navigation</h3>
+                                 <ul region="header" class="menu">
+                                 <li class="menu-item menu-item--collapsed">
+                                    <a href="alumni.html" onClick="Drupal.behaviors.atgeAnalytics.navClick(&#039;Header&#039;, &#039;Alumni&#039;)" data-drupal-link-system-path="node/706">Alumni</a>
+								 </li>
+                                 <li class="menu-item menu-item--collapsed">
+                                    <a href="current-students.html" onClick="Drupal.behaviors.atgeAnalytics.navClick(&#039;Header&#039;, &#039;Current Students&#039;)" data-drupal-link-system-path="node/91">Current Students</a>
+                                  </li>
+                                 <li class="menu-item menu-item--collapsed">
+                                   <a href="admitted-students.html" onClick="Drupal.behaviors.atgeAnalytics.navClick(&#039;Header&#039;, &#039;Admitted Students&#039;)" data-drupal-link-system-path="node/2381">Admitted Students</a>
+                                 </li>
+                                 </ul>
+                       </nav>
+                    </div>
+					
+	   			
+       <nav class="block block-tb-megamenu block-tb-megamenu-menu-blockmain block__menu--main">
+                     <h3 class="visually-hidden" id="block-mainnavigation-menu">Main navigation</h3>
+			         <div  class="tb-megamenu tb-megamenu-main" role="navigation">
+                     <div class="tb-megamenu-nav--wrapper ">
+                     <ul  class="tb-megamenu-nav nav level-0 items-6" role="list">
+                          <li  class="tb-megamenu-item level-1 mega dropdown" >
+                          <a href='admissions.html'  class="dropdown-toggle" >Admissions
+                         <span class="caret"></span>
+                         <span class="caret"></span>
+                          </a>
+                                <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="" role="list">
+                                 <div class="mega-dropdown-inner">
+                                   <div  class="tb-megamenu-row row-fluid">
+                                  <div  class="tb-megamenu-column span12 mega-col-nav" data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-1">
+                                  <div class="tb-megamenu-column-inner mega-inner clearfix">
+                                   <ul  class="tb-megamenu-subnav mega-nav level-1 items-15" role="list">        
+                                   <li  class="tb-megamenu-item level-2 mega">
+                                   <a href='admissions-overview.html' > Admissions Overview <span class="caret"></span></a>
+                                   </li>
+							       <li  class="tb-megamenu-item level-2 mega">
+                                   <a href='admissions/how-to-apply.html'>How To Apply<span class="caret"></span></a>   
+                                  </li>
+								  <li  class="tb-megamenu-item level-2 mega">
+                                   <a href='admissions/start-your-career.html'>Start Your Career<span class="caret"></span></a>   
+                                  </li>
+								  <li  class="tb-megamenu-item level-2 mega" >
+                                   <a href='admissions/admissions-requirements.html' >Admission Requirements<span class="caret"></span></a>   
+                                  </li>
+								  <li  class="tb-megamenu-item level-2 mega">
+                                   <a href='admissions/admission-process.html' >Admission Process<span class="caret"></span></a>   
+                                  </li>
+								  <li  class="tb-megamenu-item level-2 mega" >
+                                   <a href='admissions/tuition-and-fees.html' >Tuition and Fees<span class="caret"></span></a>   
+                                  </li>
+								  <li  class="tb-megamenu-item level-2 mega">
+                                   <a href='admissions/scholarships.html' >Scholarships<span class="caret"></span></a>   
+                                  </li>
+								  <li  class="tb-megamenu-item level-2 mega">
+                                   <a href='admissions/canadian-loans.html' >Canadian Loans<span class="caret"></span></a>   
+                                  </li>
+								  <li  class="tb-megamenu-item level-2 mega" >
+                                   <a href='admissions/payment-plans.html' >Payment Plans <span class="caret"></span></a>   
+                                  </li>
+								  <li  class="tb-megamenu-item level-2 mega">
+                                   <a href='admissions/merchant-information.html'>Merchant Information<span class="caret"></span></a>   
+                                  </li>
+								  <li  class="tb-megamenu-item level-2 mega">
+                                   <a href='admissions/finance-options.html' >Finance Options <span class="caret"></span></a>   
+                                  </li>
+								  <li  class="tb-megamenu-item level-2 mega">
+                                   <a href='admissions/transcript-request.html' >Transcript Request <span class="caret"></span></a>   
+                                  </li>
+                                  </ul>
+
+                              </div>
+                             </div>
+
+                            <div class="mega-dropdown__close"></div>
+                            </div>
+
+                            </div>
+                               </div>
+
+                             </li>
+
+                        <li  class="tb-megamenu-item level-1 mega dropdown">
+                         <a href='#'  class="dropdown-toggle" title="Academic">Academic<span class="caret"></span><span class="caret"></span>
+                         </a>
+                          <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+                         <div class="mega-dropdown-inner">
+                             <div  class="tb-megamenu-row row-fluid">
+                                <div  class="tb-megamenu-column span12 mega-col-nav" data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-2">
+                                   <div class="tb-megamenu-column-inner mega-inner clearfix">
+                                       <ul  class="tb-megamenu-subnav mega-nav level-1 items-7" role="list">
+                                         <li  class="tb-megamenu-item level-2 mega" >
+                                          <a href='academic-overview.html' >Academic Overview<span class="caret"></span></a>
+                                         </li>   
+                                         <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='md-program/pre-medical.html' >Pre-Medical Program<span class="caret"></span></a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='md-program/basic-science.html' >Pre-Clinical  Program<span class="caret"></span></a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega" >
+                                          <a href='md-program/md-program.html' >MD Program<span class="caret"></span></a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='md-program/curriculum.html'>Curriculum<span class="caret"></span> </a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega">
+                                         <a href='md-program/clinical-sciences.html'>Pre-Clinical Curriculum <span class="caret"></span></a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega">
+                                          <a href='md-program/clinical-rotations.html' >Clinical Rotations <span class="caret"></span></a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega">
+                                         <a href='md-program/clinical-experience.html'>Clinical Experience <span class="caret"></span></a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega" >
+                                          <a href='md-program/foundational-training.html' >Foundational Training <span class="caret"></span></a>
+										  </li>
+										  <li class="tb-megamenu-item level-2 mega" >
+                                         <a href='md-program/research.html' >Research <span class="caret"></span>
+                                          </a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='md-program/academic-calendar.html'  >Academic Calendar <span class="caret"></span>
+                                          </a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='md-program/faculty.html' >Faculty <span class="caret"></span>
+                                          </a>
+										  </li>
+                                         </ul>
+
+                                         </div>
+                                     </div>
+
+                                    <div class="mega-dropdown__close"></div>
+                                    </div>
+									</div>
+									</div>
+						</li>
+						<li  class="tb-megamenu-item level-1 mega dropdown">
+                         <a href='#'  class="dropdown-toggle" title="Student">Student<span class="caret"></span><span class="caret"></span>
+                         </a>
+                          <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+                         <div class="mega-dropdown-inner">
+                             <div  class="tb-megamenu-row row-fluid">
+                                <div  class="tb-megamenu-column span12 mega-col-nav" data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-2">
+                                   <div class="tb-megamenu-column-inner mega-inner clearfix">
+                                       <ul  class="tb-megamenu-subnav mega-nav level-1 items-7" role="list">
+                                         <li  class="tb-megamenu-item level-2 mega" >
+                                          <a href='student-life/matched-future-doctors.html' >MATCHED FUTURE DOCTORS<span class="caret"></span></a>
+                                         </li>   
+                                         <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='student-life/life-at-wuhs-overview.html' >Life On Campus<span class="caret"></span></a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='student-life/about-belize.html' >About Belize<span class="caret"></span></a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='student-life/traveling-to-belize.html' >Traveling to Belize<span class="caret"></span></a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='student-life/international-students.html' >International Students<span class="caret"></span></a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='student-life/about-belize.html' >Student Testimonials<span class="caret"></span></a>
+										  </li>
+										   <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='student-life/student-supportive-services.html' >Student Services<span class="caret"></span></a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='student-life/student-government-association.html' >Student Government Association<span class="caret"></span></a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='student-life/sga-executive-committee.html' >SGA – EXECUTIVE COMMITTEE<span class="caret"></span></a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='student-life/sga-executive-committee.html' >About SGA<span class="caret"></span></a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='student-life/events.html' >Schedule of Events<span class="caret"></span></a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='#'  >Student Facebook Page<span class="caret"></span></a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='student-life/canadian-students.html'  >Canadian Students<span class="caret"></span></a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='student-life/south-asian-students.html'  >South Asian Students<span class="caret"></span></a>
+										  </li>
+                                         </ul>
+
+                                         </div>
+                                     </div>
+
+                                    <div class="mega-dropdown__close"></div>
+                                    </div>
+									</div>
+									</div>
+						</li>
+						<li  class="tb-megamenu-item level-1 mega dropdown">
+                         <a href='#'  class="dropdown-toggle" title="Student">Resource<span class="caret"></span><span class="caret"></span>
+                         </a>
+                          <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+                         <div class="mega-dropdown-inner">
+                             <div  class="tb-megamenu-row row-fluid">
+                                <div  class="tb-megamenu-column span12 mega-col-nav" data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-2">
+                                   <div class="tb-megamenu-column-inner mega-inner clearfix">
+                                       <ul  class="tb-megamenu-subnav mega-nav level-1 items-7" role="list">
+                                         <li  class="tb-megamenu-item level-2 mega" >
+                                          <a href='resource/coronavirus-response.html' >Coronavirus Response<span class="caret"></span></a>
+                                         </li>   
+                                         <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='resource/news.html' >News<span class="caret"></span></a>
+										  </li>
+										   <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='resource/blog.html' >Blog<span class="caret"></span></a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='resource/downloads.html' >Downloads<span class="caret"></span></a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='resource/medical-resource.html' >Medical Resources<span class="caret"></span></a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='resource/alumni.html' >Alumni<span class="caret"></span></a>
+										  </li>
+										  <li  class="tb-megamenu-item level-2 mega" >
+                                         <a href='resource/medical-resource.html' >Photo Gallery<span class="caret"></span></a>
+										  </li>
+										  
+                                         </ul>
+
+                                         </div>
+                                     </div>
+
+                                    <div class="mega-dropdown__close"></div>
+                                    </div>
+									</div>
+									</div>
+						</li>
+						<li  class="tb-megamenu-item level-1 mega dropdown">
+                         <a href='#'  class="dropdown-toggle" title="Student">About<span class="caret"></span><span class="caret"></span>
+                         </a>
+                          <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+                         <div class="mega-dropdown-inner">
+                             <div  class="tb-megamenu-row row-fluid">
+                                <div  class="tb-megamenu-column span12 mega-col-nav" data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-2">
+                                   <div class="tb-megamenu-column-inner mega-inner clearfix">
+                                       <ul  class="tb-megamenu-subnav mega-nav level-1 items-7" role="list">
+                                         <li  class="tb-megamenu-item level-2 mega">
+                                                       <a href='about-overview.html'>Welcome <span class="caret"></span></a>
+												    </li>
+													<li  class="tb-megamenu-item level-2 mega">
+                                                       <a href='mission.html'>Mission, Vision, & Values <span class="caret"></span></a>
+												    </li>
+													<li  class="tb-megamenu-item level-2 mega" >
+                                                       <a href='executive-leadership.html' >Executive  Leadership <span class="caret"></span></a>
+												    </li>
+													<li  class="tb-megamenu-item level-2 mega">
+                                                       <a href='vice-president.html' >Executive Vice President <span class="caret"></span></a>
+												    </li>
+													<li  class="tb-megamenu-item level-2 mega">
+                                                       <a href='academic-dean.html' >Academic Dean <span class="caret"></span></a>
+												    </li>
+													<li  class="tb-megamenu-item level-2 mega">
+                                                       <a href='clinical-science-dean.html' >Dean of Clinical Sciences <span class="caret"></span></a>
+												    </li>
+													<li  class="tb-megamenu-item level-2 mega">
+                                                       <a href='recognition.html' >Recognition <span class="caret"></span></a>
+												    </li>
+													<li  class="tb-megamenu-item level-2 mega">
+                                                       <a href='belize-partnership.html' >Belize Partnership <span class="caret"></span></a>
+												    </li>
+													<li  class="tb-megamenu-item level-2 mega">
+                                                       <a href='careers.html' >Careers <span class="caret"></span></a>
+												    </li>
+													<li  class="tb-megamenu-item level-2 mega">
+                                                       <a href='about.html' >Global Partnership <span class="caret"></span></a>
+												    </li>
+													<li  class="tb-megamenu-item level-2 mega">
+                                                       <a href='about.html' >Contact us <span class="caret"></span></a>
+												    </li>
+										  
+                                         </ul>
+
+                                         </div>
+                                     </div>
+
+                                    <div class="mega-dropdown__close"></div>
+                                    </div>
+									</div>
+									</div>
+						</li>
+                        <li  class="tb-megamenu-item level-1 mega call-to-action large-only dropdown">
+                                <a href='admissions/how-to-apply.html'>Apply Now <span class="caret"></span><span class="caret"></span></a>
+                                    <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+                                           <div class="mega-dropdown-inner">
+                                           <div  class="tb-megamenu-row row-fluid">
+                                            <div  class="tb-megamenu-column span12 mega-col-nav">
+                                              <div class="tb-megamenu-column-inner mega-inner clearfix">
+                                                <ul  class="tb-megamenu-subnav mega-nav level-1 items-4" >
+                                          <li  class="tb-megamenu-item level-2 mega" >
+                                           <a href='#'  title="Start Your Application">Start Your Application <span class="caret"></span> </a>
+                                           </li>
+                                     </ul>
+									 </div>
+									 </div>
+									 <div class="mega-dropdown__close"></div>
+									 </div>
+									 </div>
+									 </div>
+						</li>
+                        <li  class="tb-megamenu-item level-1 mega call-to-action large-only" >
+                                   <a href='contact-admissions.html' >Request Info<span class="caret"></span></a>
+                        </li>
+					</ul>
+		</div>
+	</div>
+    </nav>
+	</div>
+    </div>
+    </div>
+    </div>
+    </div>
+  
+</header>
+<!--header-->
+			
+		
+	
+      <div class="region region__admin">
+      <div class="grid__container">
+<div class="grid__container--items">
+
+                <div data-drupal-messages-fallback class="hidden"></div>
+
+      
+      </div>
+</div>
+    </div>
+  
+
+	<main role="main" class="page--main">
+		<a id="main-content" tabindex="-1"></a>
+		
+		<div class="layout-content">
+			
+      <div class="region region__content">
+                    
+                <div id="block-rum-base-content" data-block-plugin-id="system_main_block" class="block block-system block__system-main-block">
+
+  
+    
+
+    
+      
+
+
+<article role="article" about="/node/1" class="node__page node__rum-page node__page--full node__rum-page--full node node--type-page node--view-mode-full">
+
+  
+    <div class="node__content">
+      
+													<div class="t-layout__one-column edge-to-edge no-padding no-max-width layout__bg--secondary hide-on-mobile pad-top-10 layout layout--atge-one-column" >
+				<div class="grid__container">
+					<div class="layout__regions grid__container--items" >
+																					<div  class="layout__region layout__region--main grid__container--item">
+									<div data-block-plugin-id="inline_block:component_richtext" data-inline-block-uuid="1d8e9461-22ea-4632-a364-a1fc6434493d" class="c-richtext c-rum-richtext block block-layout-builder block__inline-blockcomponent-richtext">
+
+  
+    
+
+    
+      
+  
+      <div class="c-richtext__content c-rum-richtext__content paragraph paragraph--type--atge-rich-text paragraph--view-mode--default c-atge-rich-text c-atge-rich-text--default">
+        
+      <div class="c-richtext__content--inner c-rum-richtext__content--inner">
+      <p class="text-align-center">Welcome Back | <a href="#">May 2021 Return to Campus </a><br />
+Learn how WUHS is responding to COVID-19 | <a href="#">View FAQs</a><br />
+Our Commitment to Social Justice | <a href="#">Diversity and Inclusion</a></p>
+
+    </div>
+      </div>
+  
+
+
+  
+    
+</div>
+
+								</div>
+																		</div>
+				</div>
+			</div>
+			
+													<div class="t-layout__one-column edge-to-edge no-padding no-max-width layout__bg--secondary hide-on-desktop hide-on-tablet pad-top-10 layout layout--atge-one-column" >
+				<div class="grid__container">
+					<div class="layout__regions grid__container--items" >
+																					<div  class="layout__region layout__region--main grid__container--item">
+									<div data-block-plugin-id="inline_block:component_richtext" data-inline-block-uuid="424a5343-327c-4016-b032-7c45e59e299d" class="c-richtext c-rum-richtext block block-layout-builder block__inline-blockcomponent-richtext">
+
+  
+    
+
+    
+      
+  
+      <div class="c-richtext__content c-rum-richtext__content paragraph paragraph--type--atge-rich-text paragraph--view-mode--default c-atge-rich-text c-atge-rich-text--default">
+        
+      <div class="c-richtext__content--inner c-rum-richtext__content--inner">
+      <p class="small text-align-center">Welcome Back | <a href="#">January 2021 Return to Campus </a><br />
+Learn how WUHS is responding to COVID-19 | <a href="#">View FAQs</a><br />
+Our Commitment to Social Justice | <a href="#">Diversity and Inclusion</a></p>
+
+    </div>
+      </div>
+  
+
+
+  
+    
+</div>
+
+								</div>
+																		</div>
+				</div>
+			</div>
+	<!-- Main banner -->		
+	<div class="t-layout__one-column edge-to-edge no-padding no-max-width layout__bg--none hide-on-mobile layout layout--atge-one-column" >
+				<div class="grid__container">
+					<div class="layout__regions grid__container--items" >
+																					<div  class="layout__region layout__region--main grid__container--item">
+									<div data-block-plugin-id="inline_block:component_banner" data-inline-block-uuid="b9f496a4-f330-4fa7-ad77-11b1e5af0dcb" class="c-banner c-rum-banner block block-layout-builder block__inline-blockcomponent-banner">
+
+  
+    
+
+    
+      
+  
+    <div class="c-banner--items c-rum-banner--items paragraph paragraph--type--atge-banner paragraph--view-mode--default c-atge-banner c-atge-banner--default">
+        
+      <div class="thin c-banner--item c-rum-banner--item p-banner__bg-color--none p-banner__align--center-left c-banner__mobile--natural  c-banner__layout--onecol paragraph paragraph--type--atge-banner-item paragraph--view-mode--default c-atge-banner-item c-atge-banner-item--default">
+      
+    
+
+    
+      <div class="p-rum-banner__media p-atge-banner-item--media p-banner__media ">
+          <div class="i-responsive e-image has-objectfit">
+            <img src="images/big-banner.jpg" typeof="foaf:Image" />
+
+      </div>
+    
+    
+    
+      </div>
+
+    <div class="p-rum-banner__content p-atge-banner-item--content p-banner__content c-banner__content--items">
+      
+      <div class="c-banner__content--item c-banner__text--item c-rum-banner__content--item c-rum-banner__text--item p-banner__txt-bg--plain p-banner__txt-color--brand-primary p-banner__width--lg p-banner__mtx--overlay p-banner__mtx-align--left paragraph paragraph--type--atge-banner-item-text paragraph--view-mode--default c-atge-banner-item-text c-atge-banner-item-text--default">
+      
+  <div class="c-banner__content--inner p-rum-banner__content--inner  c-banner__text--inner">
+    
+          <div class="p-rum-banner--copy p-atge-banner-item-text--copy p-banner-copy">
+        <h2 class="e-title--lg"><span style="color:#17395e;">People first.<br />
+Science always.</span></h2>
+
+      </div>
+    
+          <div class="p-rum-banner--cta p-atge-banner-item-text--cta p-banner-cta">
+        <a href="contact-admissions.html" name="" aria-label="Request Info" target="" rel="" data-gtm="call-to-action" class="e-btn--primary">Request Info</a>
+      </div>
+      </div>
+
+    </div>
+  
+
+    </div>
+  
+    </div>
+  
+
+    </div>
+  
+
+
+  
+    
+</div>
+
+								</div>
+																		</div>
+				</div>
+			</div>
+			
+			
+			<div class="t-layout__one-column edge-to-edge no-padding no-max-width layout__bg--none hide-on-desktop hide-on-tablet layout layout--atge-one-column" >
+				<div class="grid__container">
+					<div class="layout__regions grid__container--items" >
+																					<div  class="layout__region layout__region--main grid__container--item">
+									<div data-block-plugin-id="inline_block:component_banner" data-inline-block-uuid="6d8fdc9f-1740-422c-8fb7-70a9d4ec2ca2" class="c-banner c-rum-banner block block-layout-builder block__inline-blockcomponent-banner">
+
+  
+    
+
+    
+      
+  
+      <div class="c-banner--items c-rum-banner--items paragraph paragraph--type--atge-banner paragraph--view-mode--default c-atge-banner c-atge-banner--default">
+        
+      <div class="thin c-banner--item c-rum-banner--item p-banner__bg-color--none p-banner__align--top-left c-banner__mobile--natural  c-banner__layout--onecol paragraph paragraph--type--atge-banner-item paragraph--view-mode--default c-atge-banner-item c-atge-banner-item--default">
+      
+    
+
+    
+  <div class="p-rum-banner__media p-atge-banner-item--media p-banner__media ">
+          <div class="i-responsive e-image has-objectfit">
+		  <img src="images/big-banner.jpg" typeof="foaf:Image" />
+		  
+        
+
+
+      </div>
+    
+    
+    
+      </div>
+
+      <div class="p-rum-banner__content p-atge-banner-item--content p-banner__content c-banner__content--items">
+      
+      <div class="c-banner__content--item c-banner__text--item c-rum-banner__content--item c-rum-banner__text--item p-banner__txt-bg--plain p-banner__txt-color--brand-primary p-banner__width--lg p-banner__mtx--overlay p-banner__mtx-align--left paragraph paragraph--type--atge-banner-item-text paragraph--view-mode--default c-atge-banner-item-text c-atge-banner-item-text--default">
+      
+  <div class="c-banner__content--inner p-rum-banner__content--inner  c-banner__text--inner">
+    
+          <div class="p-rum-banner--copy p-atge-banner-item-text--copy p-banner-copy">
+        <p> </p>
+
+<h3>People first.</h3>
+
+<h3>Science always.</h3>
+
+      </div>
+    
+          <div class="p-rum-banner--cta p-atge-banner-item-text--cta p-banner-cta">
+        <a href="contact-admissions.html" name="" aria-label="Request Info" target="" rel="" data-gtm="call-to-action" class="e-btn--primary">Request Info</a>
+      </div>
+      </div>
+
+    </div>
+  
+
+    </div>
+  
+    </div>
+  
+
+    </div>
+  
+
+
+  
+    
+</div>
+
+								</div>
+																		</div>
+				</div>
+			</div>
+			
+			<!-- Main banner -->
+			
+	<div class="t-layout__one-column edge-to-edge no-padding no-max-width layout__bg--none layout layout--atge-one-column" >
+		    <div class="grid__container">
+				<div class="layout__regions grid__container--items" >																					 <div  class="layout__region layout__region--main grid__container--item">
+					<div data-block-plugin-id="block_content:3831b2c3-908a-45c9-a5d5-a32f52ceb836" class="c-banner c-rum-banner block block-block-content block__block-content3831b2c3-908a-45c9-a5d5-a32f52ceb836">
+                    <div class="c-banner--items c-rum-banner--items paragraph paragraph--type--atge-banner paragraph--view-mode--default c-atge-banner c-atge-banner--default">         
+                    <div class="c-banner--item c-rum-banner--item p-banner__bg-color--brand-primary p-banner__align--center-left c-banner__mobile--reverse p-banner__align--vert-fill c-banner__layout--twocol paragraph paragraph--type--atge-banner-item paragraph--view-mode--default c-atge-banner-item c-atge-banner-item--default">
+                    <div class="p-rum-banner__media p-atge-banner-item--media p-banner__media ">  
+                    </div>
+
+                    <div class="p-rum-banner__content p-atge-banner-item--content p-banner__content c-banner__content--items">
+                        <div class="left-side c-banner__content--item c-banner__text--item c-rum-banner__content--item c-rum-banner__text--item p-banner__txt-bg--plain p-banner__txt-color--light p-banner__width--full p-banner__mtx--drop p-banner__mtx-align--left paragraph paragraph--type--atge-banner-item-text paragraph--view-mode--default c-atge-banner-item-text c-atge-banner-item-text--default">
+      
+                        <div class="c-banner__content--inner p-rum-banner__content--inner  c-banner__text--inner">      
+						<h2 class="p-rum-banner--heading p-atge-banner-item-text--heading p-banner-heading">Healthcare systems serve the world best when they reflect more of the world.</h2>
+                 <div class="p-rum-banner--copy p-atge-banner-item-text--copy p-banner-copy">
+                            <p><span style="color:#ffffff;">The WUHS (Belize) was among the first of a growing number of International medical schools to adopt a competency-based curriculum, one that provides students with excellent clinical training balanced by the development of strong interpersonal and professional skills.</span></p>
+
+                    <div class="e-rte-layout__cols e-rte-layout__cols-two">
+                     <div class="e-rte-layout__col e-rte-layout__col-5">
+                      <div data-embed-button="paragraphs" data-entity-label="Paragraphs" data-paragraph-id="919003a9-e150-4208-a217-fe6e7444ed7b" data-langcode="en" data-view-mode="embed" data-entity-embed-display="entity_reference:entity_reference_entity_view" data-entity-embed-display-settings="embed" data-entity-type="embedded_paragraphs" data-entity-uuid="919003a9-e150-4208-a217-fe6e7444ed7b" class="embedded-entity">
+                      <div class="field field--name-paragraph field--type-entity-reference-revisions field--label-hidden field__item">
+                      <div class="c-button c-rum-button paragraph paragraph--type--atge-button paragraph--view-mode--embed c-atge-button c-atge-button--embed">
+                      <div class="c-button--inner">
+                     <div class="p-rum--cta p-atge-button--cta p-cta ">
+                        <a href="md-program/curriculum/foundations-of-medicine.html" name="" aria-label=" Years 1 &amp; 2: Medical Sciences" target="" rel="" class="e-btn--secondary" data-gtm="call-to-action" id=""> Years 1 &amp; 2: Medical Sciences<span class="e-icon"></span></a>
+                     </div>
+                  </div>
+                  </div>  
+                  </div>
+                 </div>
+                 </div>
+
+                     <div class="e-rte-layout__col e-rte-layout__col-5">
+                   <div data-embed-button="paragraphs" data-entity-label="Paragraphs" data-paragraph-id="c5c5e0e6-b098-475c-a0a2-290750cf9580" data-langcode="en" data-view-mode="embed" data-entity-embed-display="entity_reference:entity_reference_entity_view" data-entity-embed-display-settings="embed" data-entity-type="embedded_paragraphs" data-entity-uuid="c5c5e0e6-b098-475c-a0a2-290750cf9580" class="embedded-entity">
+                    <div class="field field--name-paragraph field--type-entity-reference-revisions field--label-hidden field__item">
+                    <div class="c-button c-rum-button paragraph paragraph--type--atge-button paragraph--view-mode--embed c-atge-button c-atge-button--embed">
+                    <div class="c-button--inner">
+                        <div class="p-rum--cta p-atge-button--cta p-cta ">
+                          <a href="md-program/curriculum/clinical-education.html" name="" aria-label="Years 3 &amp; 4: Clinical Education" target="" rel="" class="e-btn--secondary" data-gtm="call-to-action" id="">Years 3 &amp; 4: Clinical Education<span class="e-icon"></span></a>
+                        </div>
+                    </div>
+                    </div>
+  
+                    </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+    
+                    </div>
+
+                     </div>
+  
+
+                         <div class="c-banner__content--item c-banner__media--item c-rum-banner__content--item c-rum-banner__media--item has-objectfit paragraph paragraph--type--atge-banner-item-media paragraph--view-mode--default c-atge-banner-item-media c-atge-banner-item-media--default">
+                          <img  src="images/h1.jpg" width="1030" height="600" typeof="foaf:Image" class="image-style-atge-crop-freeform" />
+                         </div>
+                      </div>  
+                      </div>
+                     </div> 
+                      </div></div>
+				</div>
+		</div>
+	</div>
+			
+													<div class="t-layout__one-column standard-width layout__bg--none layout layout--atge-one-column" >
+				<div class="grid__container">
+					<div class="layout__regions grid__container--items" >
+																					<div  class="layout__region layout__region--main grid__container--item">
+									<div data-block-plugin-id="block_content:eb964a30-fad3-474f-8813-b023a2b0f1b8" class="c-grid c-rum-grid block block-block-content block__block-contenteb964a30-fad3-474f-8813-b023a2b0f1b8">
+
+  
+    
+
+    
+      
+  
+      <div class="c-grid__content c-rum-grid__content p-banner__bg-color--none p-txt-align--center c-layout--fixed c-grid--tiles paragraph paragraph--type--atge-grid paragraph--view-mode--default c-atge-grid c-atge-grid--default">
+      
+
+    
+  <div class="c-rum-grid__content--inner c-grid__content--inner">
+              <div class="c-rum-grid__header c-grid__header">
+                  <div class="c-rum-grid__header--title c-grid__header--title p-txt-color--brand-primary">
+            <span>Experience Our Excellence</span>
+          </div>
+        
+                      </div>
+    
+              
+      <div class="c-grid__items c-rum-grid__items c-grid__tiles c-rum-grid__tiles c-layout--split-6633 paragraph paragraph--type--atge-grid-tiles paragraph--view-mode--default c-atge-grid-tiles c-atge-grid-tiles--default">
+        
+  
+  
+  
+      
+  <div class="c-rum-c-grid-tile--col-featured-primary c-grid-tile--col-featured-primary">
+
+            
+      <div class="c-grid__item c-rum-grid__item c-grid__item--callout c-rum-grid__item--callout paragraph paragraph--type--atge-grid-item-callout paragraph--view-mode--tile c-atge-grid-item-callout c-atge-grid-item-callout--tile">
+          <div class="c-rum-c-grid-callout--content c-grid-callout--content  p-grid-item__brd-color--brand-primary">
+    <div class="c-rum-c-grid-callout--left c-grid-callout--left">
+              <div class="c-rum-c-grid-callout--title c-grid-callout--title p-txt-color--brand-primary">
+        <div class="e-stat"><strong>15,000+</strong></div>
+
+      </div>
+        </div>
+    <div class="c-rum-c-grid-callout--right c-grid-callout--right">
+              <div class="c-rum-c-grid-callout--copy c-grid-callout--copy p-txt-color--brand-primary">
+        <p class="e-stat-copy"><strong>Alumni network, 40% practicing in areas of need</strong></p>
+
+      </div>
+                    <div class="c-rum-c-grid-callout--cta c-grid-callout--cta">
+        <div class="c-rum-c-grid-callout--button c-grid-callout--button">
+          
+      <div class="c-button c-rum-button paragraph paragraph--type--atge-button paragraph--view-mode--teaser c-atge-button c-atge-button--teaser">
+              <a href="alumni.html" name="" aria-label="Learn More" target="" rel="" class="e-btn--primary" data-gtm="call-to-action">Learn More<span class="e-icon"></span></a>
+      </div>
+  
+
+        </div>
+      </div>
+       </div>
+  </div>
+
+    </div>
+  
+
+  </div>
+
+
+  <div class="c-rum-c-grid-tile--col-featured-secondary c-grid-tile--col-featured-secondary">
+            
+      <div class="c-grid__item c-rum-grid__item c-grid__item--callout c-rum-grid__item--callout paragraph paragraph--type--atge-grid-item-callout paragraph--view-mode--tile c-atge-grid-item-callout c-atge-grid-item-callout--tile">
+          <div class="c-rum-c-grid-callout--content c-grid-callout--content p-grid-item__bg-color--brand-primary ">
+    <div class="c-rum-c-grid-callout--left c-grid-callout--left">
+              <div class="c-rum-c-grid-callout--title c-grid-callout--title p-txt-color--light">
+        <div class="e-stat"><strong>96.7%</strong></div>
+
+      </div>
+        </div>
+    <div class="c-rum-c-grid-callout--right c-grid-callout--right">
+              <div class="c-rum-c-grid-callout--copy c-grid-callout--copy p-txt-color--light">
+        <p class="e-stat-copy"><strong>USMLE Step 1 first-time pass rate in 2019</strong></p>
+
+      </div>
+                    <div class="c-rum-c-grid-callout--cta c-grid-callout--cta">
+        <div class="c-rum-c-grid-callout--button c-grid-callout--button">
+          
+      <div class="c-button c-rum-button paragraph paragraph--type--atge-button paragraph--view-mode--teaser c-atge-button c-atge-button--teaser">
+              <a href="md-program.html" name="" aria-label="Learn More" target="" rel="" class="e-btn--secondary" data-gtm="call-to-action">Learn More<span class="e-icon"></span></a>
+      </div>
+  
+
+        </div>
+      </div>
+       </div>
+  </div>
+
+    </div>
+  
+
+  </div>
+
+
+    <div class="c-rum-c-grid-tile--col-left c-grid-tile--col-left">
+
+            
+      <div class="c-grid__item c-rum-grid__item c-grid__item--callout c-rum-grid__item--callout paragraph paragraph--type--atge-grid-item-callout paragraph--view-mode--tile c-atge-grid-item-callout c-atge-grid-item-callout--tile">
+          <div class="c-rum-c-grid-callout--content c-grid-callout--content  p-grid-item__brd-color--brand-tertiary">
+    <div class="c-rum-c-grid-callout--left c-grid-callout--left">
+              <div class="c-rum-c-grid-callout--title c-grid-callout--title p-txt-color--brand-tertiary">
+        <div class="e-stat"><strong>95.2%</strong></div>
+
+      </div>
+        </div>
+    <div class="c-rum-c-grid-callout--right c-grid-callout--right">
+              <div class="c-rum-c-grid-callout--copy c-grid-callout--copy p-txt-color--brand-tertiary">
+        <p class="e-stat-copy"><strong>First-time residency rate in 2019-2020</strong></p>
+
+      </div>
+                    <div class="c-rum-c-grid-callout--cta c-grid-callout--cta">
+        <div class="c-rum-c-grid-callout--button c-grid-callout--button">
+          
+      <div class="c-button c-rum-button paragraph paragraph--type--atge-button paragraph--view-mode--teaser c-atge-button c-atge-button--teaser">
+              <a href="md-program/residency.html" name="" aria-label="Learn More" target="" rel="" class="e-btn--primary" data-gtm="call-to-action">Learn More<span class="e-icon"></span></a>
+      </div>
+  
+
+        </div>
+      </div>
+       </div>
+  </div>
+
+    </div>
+  
+
+  </div>
+
+
+    <div class="c-rum-c-grid-tile--col-middle c-grid-tile--col-middle">
+
+    
+        
+      <div class="c-grid__item c-rum-grid__item c-grid__item--callout c-rum-grid__item--callout paragraph paragraph--type--atge-grid-item-callout paragraph--view-mode--tile c-atge-grid-item-callout c-atge-grid-item-callout--tile">
+          <div class="c-rum-c-grid-callout--content c-grid-callout--content p-grid-item__bg-color--brand-secondary ">
+    <div class="c-rum-c-grid-callout--left c-grid-callout--left">
+              <div class="c-rum-c-grid-callout--title c-grid-callout--title p-txt-color--brand-primary">
+        <div class="e-stat"><strong>14</strong></div>
+
+      </div>
+        </div>
+    <div class="c-rum-c-grid-callout--right c-grid-callout--right">
+              <div class="c-rum-c-grid-callout--copy c-grid-callout--copy p-txt-color--brand-primary">
+        <p class="e-stat-copy"><strong>WUHS has 14 affiliation agreements with hospital systems in USA and Canada. ​</strong></p>
+
+      </div>
+                    <div class="c-rum-c-grid-callout--cta c-grid-callout--cta">
+        <div class="c-rum-c-grid-callout--button c-grid-callout--button">
+          
+      <div class="c-button c-rum-button paragraph paragraph--type--atge-button paragraph--view-mode--teaser c-atge-button c-atge-button--teaser">
+              <a href="md-program/curriculum/clinical-education.html" name="" aria-label="Learn More" target="" rel="" class="e-btn--secondary" data-gtm="call-to-action">Learn More<span class="e-icon"></span></a>
+      </div>
+  
+
+        </div>
+      </div>
+       </div>
+  </div>
+
+    </div>
+  
+
+  </div>
+
+
+    <div class="c-rum-c-grid-tile--col-right c-grid-tile--col-right">
+
+            
+      <div class="c-grid__item c-rum-grid__item c-grid__item--callout c-rum-grid__item--callout paragraph paragraph--type--atge-grid-item-callout paragraph--view-mode--tile c-atge-grid-item-callout c-atge-grid-item-callout--tile">
+          <div class="c-rum-c-grid-callout--content c-grid-callout--content  p-grid-item__brd-color--brand-primary">
+    <div class="c-rum-c-grid-callout--left c-grid-callout--left">
+              <div class="c-rum-c-grid-callout--title c-grid-callout--title p-txt-color--brand-primary">
+        <div class="e-stat"><strong>3x</strong></div>
+
+      </div>
+        </div>
+    <div class="c-rum-c-grid-callout--right c-grid-callout--right">
+              <div class="c-rum-c-grid-callout--copy c-grid-callout--copy p-txt-color--brand-primary">
+        <p class="e-stat-copy"><strong>More start dates - January, May and September</strong></p>
+
+      </div>
+                    <div class="c-rum-c-grid-callout--cta c-grid-callout--cta">
+        <div class="c-rum-c-grid-callout--button c-grid-callout--button">
+          
+      <div class="c-button c-rum-button paragraph paragraph--type--atge-button paragraph--view-mode--teaser c-atge-button c-atge-button--teaser">
+              <a href="admissions/how-to-apply.html" name="" aria-label="Learn More" target="" rel="" class="e-btn--primary" data-gtm="call-to-action">Learn More<span class="e-icon"></span></a>
+      </div>
+  
+
+        </div>
+      </div>
+       </div>
+  </div>
+
+    </div>
+  
+
+  </div>
+
+  
+    </div>
+  
+
+    
+          </div>
+    </div>
+  
+
+
+  
+    
+</div>
+
+								</div>
+																		</div>
+				</div>
+			</div>
+			
+													<div class="t-layout__one-column constrained-width layout__bg--none layout layout--atge-one-column" >
+				<div class="grid__container">
+					<div class="layout__regions grid__container--items" >
+																					<div  class="layout__region layout__region--main grid__container--item">
+									<div data-block-plugin-id="inline_block:component_card" data-inline-block-uuid="9bb79d62-e37b-4a2a-83fd-b6722defd6f3" class="c-card c-rum-card block block-layout-builder block__inline-blockcomponent-card">
+
+  
+    
+
+    
+    <div class="c-card__items c-rum-card__items">
+        
+  
+      <div class="c-card__item c-rum-card__item c-card__style--secondary  c-card--twocol p-banner__txt-color--brand-primary c-card_center-heading paragraph paragraph--type--atge-card paragraph--view-mode--default c-atge-card c-atge-card--default">
+      
+                      <div class="c-card__item--heading-title c-rum-card__item--heading-title">
+          Find purpose in paradise.
+        </div>
+            
+        <div class="c-card__item--media c-rum-card__item--media">
+      
+      <div class="c-video c-rum-video c-media c-rum-media video-inline paragraph paragraph--type--atge-video paragraph--view-mode--teaser c-atge-video c-atge-video--teaser">
+            <div class="" style="max-width: 100%">
+      <div id="video-32851" style="padding:56.25% 0 0 0;position:relative;" class="e-video--external">
+                        
+        
+        
+        <div class="atge-youtube-data" data-is-modal=""
+             data-container-id="video-container-media__youtube--UG-OjGtnFgw" data-host="youtube"
+             data-video-id="UG-OjGtnFgw" data-title="Student&#x20;Profile&#x20;-&#x20;Dana&#x20;Abossi"
+             data-parameters="&amp;controls=1&amp;disablekb=0&amp;loop=0&amp;mute=0"></div>
+        <div id="player-UG-OjGtnFgw" class="atge-youtube-iframe-container"></div>
+        
+        <div class="e-media-cover-img e-media-icon--play has-objectfit">
+            <img  src="images/v1.jpg" width="500" height="258" typeof="foaf:Image" class="image-style-atge-crop-freeform" />
+
+
+        </div>
+    </div>
+
+
+    </div>
+      </div>
+  
+
+    </div>
+  
+    <div class="c-card__item--content c-rum-card__item--content ">
+
+        
+                
+    <hr>
+
+              <div class="c-card__item--copy c-rum-card__item--copy">
+        <p>Get your medical education in an amazing location .WUHS's dedicated students are driven to make an undeniable impact where it’s needed most.</p>
+
+      </div>
+    
+            
+          <div class="c-card__item--cta c-rum-card__item--cta ">
+        
+      <div class="c-button c-rum-button paragraph paragraph--type--atge-button paragraph--view-mode--teaser c-atge-button c-atge-button--teaser">
+              <a href="student-life.html" name="" aria-label="Learn More" target="" rel="" class="e-btn--primary" data-gtm="call-to-action">Learn More<span class="e-icon"></span></a>
+      </div>
+  
+
+      </div>
+    
+  </div>
+    </div>
+  
+
+
+  
+  </div>
+
+    
+</div>
+
+								</div>
+																		</div>
+				</div>
+			</div>
+			
+													<div class="t-layout__one-column edge-to-edge no-padding no-max-width layout__bg--none layout layout--atge-one-column" >
+				<div class="grid__container">
+					<div class="layout__regions grid__container--items" >
+																					<div  class="layout__region layout__region--main grid__container--item">
+									<div data-block-plugin-id="inline_block:component_cta" data-inline-block-uuid="f6a8d696-3cab-4f56-ba47-bed78c514d65" class="c-cta-banner c-rum-cta-banner block block-layout-builder block__inline-blockcomponent-cta">
+
+  
+    
+
+    
+      
+  
+      <div class="c-cta-banner__items c-rum-cta-banner__items p-txt-align--center p-banner__txt-color--brand-primary has-media c-cta-banner__horizontal paragraph paragraph--type--atge-cta paragraph--view-mode--default c-atge-cta c-atge-cta--default">
+      
+  <div class="c-rum-cta-banner__media c-cta-banner__media has-objectfit">
+          <img  src="images/sk.jpg" width="594" height="198" typeof="foaf:Image" class="image-style-atge-3-1-crop" />
+
+
+            </div>
+
+  <div class="c-rum-cta-banner__content c-cta-banner__content c-cta-banner__content--inline__cta">
+
+          <div class="c-rum-cta-banner__content c-cta-banner__content--header">
+        <H1 style="color:white" class="c-rum-cta-banner__content--headline p-banner__txt-color--brand-primary c-cta-banner__content--headline">
+            Ready to learn more?
+          </H1>
+        
+              </div>
+    
+          <div class="c-rum-cta-banner__content--items c-cta-banner__content--items">
+        
+      <div class="c-cta-banner__content--items c-rum-cta-banner__content--items c-cta-banner__horizontal--items c-rum-cta-banner__horizontal--items c-cta-banner__layout--col-1 paragraph paragraph--type--atge-cta-item-horizontal paragraph--view-mode--default c-atge-cta-item-horizontal c-atge-cta-item-horizontal--default">
+        
+      <div class="p-cta-banner__content--item p-cta-banner__horizontal--item p-rum-cta-banner__content--item p-rum-cta-banner__horizontal--item paragraph paragraph--type--atge-cta-fields paragraph--view-mode--horizontal c-atge-cta-fields c-atge-cta-fields--horizontal">
+      
+    
+    
+    
+  
+      <div class="c-rum-cta-banner__horizontal--heading c-cta-banner__horizontal--column">
+      
+      
+              <div class="cta-banner__button-wrapper">
+                      
+      <div class="pad-bottom-5 c-button c-rum-button paragraph paragraph--type--atge-button paragraph--view-mode--default c-atge-button c-atge-button--default">
+        <div class="c-button--inner">
+          <div class="p-rum--cta p-atge-button--cta p-cta e-btn-align--center">
+        <a href="360-tour.html" name="" aria-label="Take a Virtual Tour" target="" rel="" class="e-btn--secondary" data-gtm="call-to-action">Take a Virtual Tour<span class="e-icon"></span></a>
+      </div>
+      </div>
+    </div>
+  
+
+      <div class="c-button c-rum-button paragraph paragraph--type--atge-button paragraph--view-mode--default c-atge-button c-atge-button--default">
+        <div class="c-button--inner">
+          <div class="p-rum--cta p-atge-button--cta p-cta ">
+        <a href="admissions/admissions-tools/infosessions.html" name="" aria-label="Attend A Webinar" target="" rel="" class="e-btn--secondary" data-gtm="call-to-action">Attend A Webinar<span class="e-icon"></span></a>
+      </div>
+      </div>
+    </div>
+  
+
+      <div class="pad-bottom-5 c-button c-rum-button paragraph paragraph--type--atge-button paragraph--view-mode--default c-atge-button c-atge-button--default">
+        <div class="c-button--inner">
+          <div class="p-rum--cta p-atge-button--cta p-cta e-btn-align--center">
+        <a href="contact-admissions.html" name="" aria-label="Barbados" target="" rel="" class="e-btn--secondary" data-gtm="call-to-action">Contact Admissions<span class="e-icon"></span></a>
+      </div>
+      </div>
+    </div>
+  
+
+      <div class="c-button c-rum-button paragraph paragraph--type--atge-button paragraph--view-mode--default c-atge-button c-atge-button--default">
+        <div class="c-button--inner">
+          <div class="p-rum--cta p-atge-button--cta p-cta e-btn-align--center">
+        <a href="#" name="How to Apply" aria-label="How to Apply" target="" rel="" class="e-btn--secondary" data-gtm="call-to-action">Apply to WUHS<span class="e-icon"></span></a>
+      </div>
+      </div>
+    </div>
+  
+
+                  </div>
+          </div>
+  
+    
+    
+    </div>
+  
+
+    </div>
+  
+
+      </div>
+    
+  </div>
+    </div>
+  
+
+
+  
+    
+</div>
+
+								</div>
+																		</div>
+				</div>
+			</div>
+			
+													<div class="t-layout__one-column edge-to-edge no-padding no-max-width layout__bg--none hide-on-desktop hide-on-tablet hide-on-mobile layout layout--atge-one-column" >
+				<div class="grid__container">
+					<div class="layout__regions grid__container--items" >
+																					<div  class="layout__region layout__region--main grid__container--item">
+									<div data-block-plugin-id="block_content:d3ba4b53-4089-4ea2-8cfd-059e2e77cb2d" class="c-cta-banner c-rum-cta-banner block block-block-content block__block-contentd3ba4b53-4089-4ea2-8cfd-059e2e77cb2d">
+
+  
+    
+
+    
+      
+  
+      <div class="c-cta-banner__items c-rum-cta-banner__items p-txt-align--left p-banner__txt-color--brand-primary has-media c-cta-banner__horizontal paragraph paragraph--type--atge-cta paragraph--view-mode--default c-atge-cta c-atge-cta--default">
+      
+  <div class="c-rum-cta-banner__media c-cta-banner__media has-objectfit">
+          <img  src="images/sk.jpg" typeof="foaf:Image" />
+
+            </div>
+
+  <div class="c-rum-cta-banner__content c-cta-banner__content c-cta-banner__content--inline__cta">
+
+          <div class="c-rum-cta-banner__content c-cta-banner__content--header">
+        <H1 class="c-rum-cta-banner__content--headline p-banner__txt-color--brand-primary c-cta-banner__content--headline">
+            WASHINGTON UNIVERSITY OF HEALTH AND SCIENCE
+          </H1>
+        
+              </div>
+    
+          <div class="c-rum-cta-banner__content--items c-cta-banner__content--items">
+        
+      <div class="c-cta-banner__content--items c-rum-cta-banner__content--items c-cta-banner__horizontal--items c-rum-cta-banner__horizontal--items c-cta-banner__layout--col-1 paragraph paragraph--type--atge-cta-item-horizontal paragraph--view-mode--default c-atge-cta-item-horizontal c-atge-cta-item-horizontal--default">
+        
+      <div class="p-cta-banner__content--item p-cta-banner__horizontal--item p-rum-cta-banner__content--item p-rum-cta-banner__horizontal--item paragraph paragraph--type--atge-cta-fields paragraph--view-mode--horizontal c-atge-cta-fields c-atge-cta-fields--horizontal">
+      
+    
+    
+    
+  
+      <div class="c-rum-cta-banner__horizontal--heading c-cta-banner__horizontal--column">
+      
+      
+              <div class="cta-banner__button-wrapper">
+                      
+      <div class="pad-bottom-5 c-button c-rum-button paragraph paragraph--type--atge-button paragraph--view-mode--default c-atge-button c-atge-button--default">
+        <div class="c-button--inner">
+          <div class="p-rum--cta p-atge-button--cta p-cta e-btn-align--center">
+        <a href="contact-admissions.html" name="" aria-label="Contact Admissions" target="" rel="" class="e-btn--secondary" data-gtm="call-to-action">Contact Admissions<span class="e-icon"></span></a>
+      </div>
+      </div>
+    </div>
+  
+
+      <div class="pad-bottom-5 c-button c-rum-button paragraph paragraph--type--atge-button paragraph--view-mode--default c-atge-button c-atge-button--default">
+        <div class="c-button--inner">
+          <div class="p-rum--cta p-atge-button--cta p-cta e-btn-align--center">
+        <a href="student-life/barbados.html" name="Barbados" aria-label="Barbados" target="" rel="" class="e-btn--secondary" data-gtm="call-to-action">Explore Barbados<span class="e-icon"></span></a>
+      </div>
+      </div>
+    </div>
+  
+
+      <div class="pad-bottom-5 c-button c-rum-button paragraph paragraph--type--atge-button paragraph--view-mode--default c-atge-button c-atge-button--default">
+        <div class="c-button--inner">
+          <div class="p-rum--cta p-atge-button--cta p-cta e-btn-align--center">
+        <a href="https://rossu.secure.force.com/apply" name="How to Apply" aria-label="How to Apply" target="" rel="" class="e-btn--secondary" data-gtm="call-to-action">Start Your Application<span class="e-icon"></span></a>
+      </div>
+      </div>
+    </div>
+  
+
+                  </div>
+          </div>
+  
+    
+    
+    </div>
+  
+
+    </div>
+  
+
+      </div>
+    
+  </div>
+    </div>
+  
+
+
+  
+    
+</div>
+
+								</div>
+																		</div>
+				</div>
+			</div>
+			
+													<div class="t-layout__two-column standard-width layout__split--5050 sidebar-first sidebar-left layout__bg--none layout layout--atge-two-column" >
+				<div class="grid__container">
+					<div class="layout__regions grid__container--items" >
+																													<div  class="layout__region grid__container--item layout__region--sidebar">
+									<div data-block-plugin-id="inline_block:component_richtext" data-inline-block-uuid="b173c8f1-b527-49ff-8fa5-8b244645a8ac" class="c-richtext c-rum-richtext block block-layout-builder block__inline-blockcomponent-richtext">
+
+  
+    
+
+    
+      
+  
+      <div class="c-richtext__content c-rum-richtext__content paragraph paragraph--type--atge-rich-text paragraph--view-mode--default c-atge-rich-text c-atge-rich-text--default">
+        
+      <div class="c-richtext__content--inner c-rum-richtext__content--inner">
+      <div data-embed-button="paragraphs" data-entity-label="Paragraphs" data-paragraph-id="6b6d670a-3681-4b0a-ac0d-fbc7c8480116" data-langcode="en" data-view-mode="embed" data-entity-embed-display="entity_reference:entity_reference_entity_view" data-entity-embed-display-settings="embed" data-entity-type="embedded_paragraphs" data-entity-uuid="6b6d670a-3681-4b0a-ac0d-fbc7c8480116" class="embedded-entity">
+            <div class="field field--name-paragraph field--type-entity-reference-revisions field--label-hidden field__item">
+      <div class="c-image c-rum-image paragraph paragraph--type--atge-image paragraph--view-mode--embed c-atge-image c-atge-image--embed">
+        <span class="" style="max-width: 100%">
+                                      
+          
+                              <img src="images/student.jpg" width="2045" height="1022" typeof="foaf:Image" class="image-style-atge-2-1-crop" /></span>
+    </div>
+  
+</div>
+      </div>
+
+    </div>
+      </div>
+  
+
+
+  
+    
+</div>
+
+								</div>
+																																				<div  class="layout__region grid__container--item layout__region--main">
+									<div data-block-plugin-id="inline_block:component_richtext" data-inline-block-uuid="8e8f5b68-f6d9-43bd-8aaa-1b93be2e2963" class="c-richtext c-rum-richtext block block-layout-builder block__inline-blockcomponent-richtext">
+
+  
+    
+
+    
+      
+  
+      <div class="c-richtext__content c-rum-richtext__content paragraph paragraph--type--atge-rich-text paragraph--view-mode--default c-atge-rich-text c-atge-rich-text--default">
+        
+      <div class="c-richtext__content--inner c-rum-richtext__content--inner">
+      <p class="large">WUHS (Belize) will be recognized as a national leader in education, research, clinical practice and service.</p>
+
+<p>Washington University of Health and Science (Belize) offers Basic Sciences and Clinical Sciences curricula which are designed to prepare students for licensure and practice in the US or Canada.</p>
+
+    </div>
+      </div>
+  
+
+
+  
+    
+</div>
+
+								</div>
+																		</div>
+				</div>
+			</div>
+			
+													<div class="t-layout__one-column standard-width layout__bg--none layout layout--atge-one-column" >
+				<div class="grid__container">
+					<div class="layout__regions grid__container--items" >
+																					<div  class="layout__region layout__region--main grid__container--item">
+									<div data-block-plugin-id="inline_block:component_grid" data-inline-block-uuid="4d83e435-54f2-427b-bdce-cc57803423b3" class="c-grid c-rum-grid block block-layout-builder block__inline-blockcomponent-grid">
+
+  
+    
+
+    
+      
+  
+      <div class="c-grid__content c-rum-grid__content p-banner__bg-color--none p-txt-align--left c-layout--fixed c-grid--standard paragraph paragraph--type--atge-grid paragraph--view-mode--default c-atge-grid c-atge-grid--default">
+      
+
+    
+  <div class="c-rum-grid__content--inner c-grid__content--inner">
+        
+              
+      <div class="c-view c-rum-view c-grid__layout--threecol p-txt-align--left paragraph paragraph--type--atge-view paragraph--view-mode--default c-atge-view c-atge-view--default">
+            
+<div class="field field--name-field-atge-views-ref field--type-viewfield field--label-hidden">
+  
+    
+        
+<div class="field__item field__item-label-hidden">
+  
+    
+      <div class="views-element-container"><div class="view--events--featured view view-atge-events-group-listing view-id-atge_events_group_listing view-display-id-block_1 js-view-dom-id-0896f2f9e495373b763a03f7b88b654d2efdb067337e2e36d1b38595acb92fe2">
+  
+    
+      <div class="view-header">
+      <div class="e-title--view">
+<div class="e-title--featured">Featured </div>
+<div class="e-title--events">Events</div>
+</div>
+<div class="view-all"><a href="admissions/admissions-tools/infosessions.html" name="View All Events" aria-label="View All Events" target="" rel="" class="e-btn--plain" data-gtm="call-to-action" id="View All Events">View All Events</a></div>
+    </div>
+      
+      <div class="view-content">
+          <div class="c-grid__item--standard views-row"><div><span><a href="admissions/admissions-tools/infosessions/budgeting-medical-school.html">
+<div class="c-rum-c-grid-standard--tag c-grid-standard--tag"></div>
+<div class="c-rum-c-grid-standard--title c-grid-standard--title">Budgeting Before, During and After Medical School</div>
+<div class="c-rum-c-grid-standard--timezone c-grid-standard--timezone">April 22, 2021<br>4:00PM - 5:30 PM EDT </div>
+<span class="c-rum-c-grid-standard--btn-register e-btn--primary">Register</span>
+</a></span></div></div>
+    <div class="c-grid__item--standard views-row"><div><span><a href="admissions/admissions-tools/infosessions/virtual-med-school-fair.html">
+<div class="c-rum-c-grid-standard--tag c-grid-standard--tag"></div>
+<div class="c-rum-c-grid-standard--title c-grid-standard--title">Virtual Med School Fair</div>
+<div class="c-rum-c-grid-standard--timezone c-grid-standard--timezone">May 8, 2021<br>9:00AM - 5:00PM EDT </div>
+<span class="c-rum-c-grid-standard--btn-register e-btn--primary">Register</span>
+</a></span></div></div>
+    <div class="c-grid__item--standard views-row"><div><span><a href="admissions/admissions-tools/infosessions/canada-after-us-residency.html">
+<div class="c-rum-c-grid-standard--tag c-grid-standard--tag"></div>
+<div class="c-rum-c-grid-standard--title c-grid-standard--title">Pathway Back to Canada After US Residency</div>
+<div class="c-rum-c-grid-standard--timezone c-grid-standard--timezone">May 12, 2021<br>8:00PM - 9:00PM EDT </div>
+<span class="c-rum-c-grid-standard--btn-register e-btn--primary">Register</span>
+</a></span></div></div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+
+    </div>
+
+      </div>
+  
+
+    
+          </div>
+    </div>
+  
+
+
+  
+    
+</div>
+
+								</div>
+																		</div>
+				</div>
+			</div>
+			
+													<div class="t-layout__one-column edge-to-edge no-padding no-max-width layout__bg--none layout layout--atge-one-column" >
+				<div class="grid__container">
+					<div class="layout__regions grid__container--items" >
+																					<div  class="layout__region layout__region--main grid__container--item">
+									<div data-block-plugin-id="block_content:e1c08357-7b45-46c5-add9-2132c3328837" class="c-grid c-rum-grid block block-block-content block__block-contente1c08357-7b45-46c5-add9-2132c3328837">
+
+  
+    
+
+    
+      
+  
+      <div class="c-grid__content c-rum-grid__content p-banner__bg-color--gray p-txt-align--left c-layout--fixed c-grid--callout paragraph paragraph--type--atge-grid paragraph--view-mode--default c-atge-grid c-atge-grid--default">
+      
+
+    
+  <div class="c-rum-grid__content--inner c-grid__content--inner">
+              <div class="c-rum-grid__header c-grid__header">
+        
+                          <div class="c-rum-grid__header--copy c-grid__header--copy p-txt-color--dark">
+            <div class="{{stackedCol}} e-rte-layout__cols e-rte-layout__cols-two">
+<div class="e-rte-layout__col e-rte-layout__col-8">
+<h3 class="text-align-center"><br /><span style="color:#003a70;">CHECKING THE PULSE: A PREMED PODCAST </span></h3>
+</div>
+
+<div class="e-rte-layout__col e-rte-layout__col-4">
+<div data-embed-button="paragraphs" data-entity-label="Paragraphs" data-paragraph-id="6a5f53e1-fb87-4462-9f8f-03c08bc0fb30" data-langcode="en" data-view-mode="embed" data-entity-embed-display="entity_reference:entity_reference_entity_view" data-entity-embed-display-settings="embed" data-entity-type="embedded_paragraphs" data-entity-uuid="6a5f53e1-fb87-4462-9f8f-03c08bc0fb30" class="embedded-entity">
+            <div class="field field--name-paragraph field--type-entity-reference-revisions field--label-hidden field__item">
+      <div class="hide-on-mobile c-button c-rum-button paragraph paragraph--type--atge-button paragraph--view-mode--embed c-atge-button c-atge-button--embed">
+        <div class="c-button--inner">
+          <div class="p-rum--cta p-atge-button--cta p-cta e-btn-align--left">
+        <a href="about/checking-the-pulse-podcast.html" name="" aria-label="VIEW ALL" target="" rel="" class="e-btn--primary" data-gtm="call-to-action" id="">VIEW ALL<span class="e-icon"></span></a>
+      </div>
+      </div>
+    </div>
+  
+</div>
+      </div>
+</div>
+</div>
+
+<div data-embed-button="paragraphs" data-entity-label="Paragraphs" data-paragraph-id="338431a6-a8c2-4cd9-ba4b-df1bb69d78df" data-langcode="en" data-view-mode="embed" data-entity-embed-display="entity_reference:entity_reference_entity_view" data-entity-embed-display-settings="embed" data-entity-type="embedded_paragraphs" data-entity-uuid="338431a6-a8c2-4cd9-ba4b-df1bb69d78df" class="embedded-entity">
+            <div class="field field--name-paragraph field--type-entity-reference-revisions field--label-hidden field__item">
+      <div class="hide-on-desktop hide-on-tablet c-button c-rum-button paragraph paragraph--type--atge-button paragraph--view-mode--embed c-atge-button c-atge-button--embed">
+        <div class="c-button--inner">
+          <div class="p-rum--cta p-atge-button--cta p-cta e-btn-align--center">
+        <a href="about/checking-the-pulse-podcast.html" name="" aria-label="View All" target="" rel="" class="e-btn--primary" data-gtm="call-to-action" id="">View All<span class="e-icon"></span></a>
+      </div>
+      </div>
+    </div>
+  
+</div>
+      </div>
+
+          </div>
+              </div>
+    
+              
+      <div class="c-grid__items c-rum-grid__items c-grid__main c-rum-grid__main c-grid__layout--threecol paragraph paragraph--type--atge-grid-items paragraph--view-mode--default c-atge-grid-items c-atge-grid-items--default">
+          
+      <div class="c-grid__item c-rum-grid__item c-grid__item--callout c-rum-grid__item--callout p-txt-align--left paragraph paragraph--type--atge-grid-item-callout paragraph--view-mode--default c-atge-grid-item-callout c-atge-grid-item-callout--default">
+          <div class="c-rum-c-grid-callout--content c-grid-callout--content  ">
+    <div class="c-rum-c-grid-callout--left c-grid-callout--left">
+              <div class="c-rum-c-grid-callout--title c-grid-callout--title p-txt-color--brand-primary">
+        <h4>MD Program Intro</h4>
+
+      </div>
+        </div>
+    <div class="c-rum-c-grid-callout--right c-grid-callout--right">
+              <div class="c-rum-c-grid-callout--copy c-grid-callout--copy p-txt-color--brand-primary">
+        <p>Washington University Of Health and Science! This episode is an introduction to our MD program, covering who we are, our timeline, location, curriculum, rotations and outcomes, like board pass rates and residency matches.</p>
+
+      </div>
+                    <div class="c-rum-c-grid-callout--cta c-grid-callout--cta">
+        <div class="c-rum-c-grid-callout--button c-grid-callout--button">
+          
+      <div class="c-button c-rum-button e-btn-align--left paragraph paragraph--type--atge-button paragraph--view-mode--teaser c-atge-button c-atge-button--teaser">
+              <a href="about/checking-the-pulse-podcast/md-program-intro.html" name="" aria-label="LISTEN NOW &gt;" target="" rel="" class="e-btn--plain p-txt-color--brand-tertiary" data-gtm="call-to-action">LEARN MORE ><span class="e-icon"></span></a>
+      </div>
+  
+
+        </div>
+      </div>
+       </div>
+  </div>
+
+    </div>
+  
+
+      <div class="c-grid__item c-rum-grid__item c-grid__item--callout c-rum-grid__item--callout p-txt-align--left paragraph paragraph--type--atge-grid-item-callout paragraph--view-mode--default c-atge-grid-item-callout c-atge-grid-item-callout--default">
+          <div class="c-rum-c-grid-callout--content c-grid-callout--content  ">
+    <div class="c-rum-c-grid-callout--left c-grid-callout--left">
+              <div class="c-rum-c-grid-callout--title c-grid-callout--title p-txt-color--brand-primary">
+        <h4>MEDICAL EDUCATION READINESS PROGRAM</h4>
+
+      </div>
+        </div>
+    <div class="c-rum-c-grid-callout--right c-grid-callout--right">
+              <div class="c-rum-c-grid-callout--copy c-grid-callout--copy p-txt-color--brand-primary">
+        <p>This premed podcast focuses on the Medical Education Readiness Program (MERP) is a 15-week medical school preparatory program focused on preparing premed students for success in medical school.</p>
+
+      </div>
+                    <div class="c-rum-c-grid-callout--cta c-grid-callout--cta">
+        <div class="c-rum-c-grid-callout--button c-grid-callout--button">
+          
+      <div class="c-button c-rum-button e-btn-align--left paragraph paragraph--type--atge-button paragraph--view-mode--teaser c-atge-button c-atge-button--teaser">
+              <a href="about/checking-the-pulse-podcast/medical-education-readiness-program.html" name="" aria-label="LISTEN NOW &gt;" target="" rel="" class="e-btn--plain p-txt-color--brand-tertiary" data-gtm="call-to-action">LEARN MORE ><span class="e-icon"></span></a>
+      </div>
+  
+
+        </div>
+      </div>
+       </div>
+  </div>
+
+    </div>
+  
+
+      <div class="c-grid__item c-rum-grid__item c-grid__item--callout c-rum-grid__item--callout p-txt-align--left paragraph paragraph--type--atge-grid-item-callout paragraph--view-mode--default c-atge-grid-item-callout c-atge-grid-item-callout--default">
+          <div class="c-rum-c-grid-callout--content c-grid-callout--content  ">
+    <div class="c-rum-c-grid-callout--left c-grid-callout--left">
+              <div class="c-rum-c-grid-callout--title c-grid-callout--title p-txt-color--brand-primary">
+        <h4>WUHS AND THE APPLICATION PROCESS</h4>
+
+      </div>
+        </div>
+    <div class="c-rum-c-grid-callout--right c-grid-callout--right">
+              <div class="c-rum-c-grid-callout--copy c-grid-callout--copy p-txt-color--brand-primary">
+        <p>In this premed podcast episode, one of our Assistant Director of Admissions describes the application process from submitting your application, to getting the final decision and the support throughout the transition. We talk about pre-requisites, GPA, MCAT and term starts.</p>
+
+      </div>
+                    <div class="c-rum-c-grid-callout--cta c-grid-callout--cta">
+        <div class="c-rum-c-grid-callout--button c-grid-callout--button">
+          
+      <div class="c-button c-rum-button e-btn-align--left paragraph paragraph--type--atge-button paragraph--view-mode--teaser c-atge-button c-atge-button--teaser">
+              <a href="about/checking-the-pulse-podcast/rusm-and-the-application-process.html" name="" aria-label="LISTEN NOW &gt;" target="" rel="" class="e-btn--plain p-txt-color--brand-tertiary" data-gtm="call-to-action">LEARN MORE ><span class="e-icon"></span></a>
+      </div>
+  
+
+        </div>
+      </div>
+       </div>
+  </div>
+
+    </div>
+  
+
+    </div>
+  
+
+    
+          </div>
+    </div>
+  
+
+
+  
+    
+</div>
+
+								</div>
+																		</div>
+				</div>
+			</div>
+			
+													<div class="t-layout__one-column edge-to-edge no-padding no-max-width layout__bg--primary layout layout--atge-one-column" >
+				<div class="grid__container">
+					<div class="layout__regions grid__container--items" >
+																					<div  class="layout__region layout__region--main grid__container--item">
+									<div data-block-plugin-id="inline_block:component_banner" data-inline-block-uuid="936c89f9-ec4d-4c20-8da0-8c7aa2dffaba" class="c-banner c-rum-banner block block-layout-builder block__inline-blockcomponent-banner">
+
+  
+    
+
+    
+      
+  
+    
+</div>
+
+								</div>
+																		</div>
+				</div>
+			</div>
+	<!--social media section-->		
+	<div class="t-layout__two-column edge-to-edge no-padding no-max-width layout__split--5050 content-first sidebar-left layout__bg--primary hide-on-mobile hide-on-tablet layout layout--atge-two-column" >
+		<div class="grid__container">
+			<div class="layout__regions grid__container--items" >
+			    <div  class="layout__region grid__container--item layout__region--sidebar">
+						<div data-block-plugin-id="inline_block:component_banner" data-inline-block-uuid="6a807ebf-618a-4772-8626-287e5b7cecbe" class="c-banner c-rum-banner block block-layout-builder block__inline-blockcomponent-banner">  
+                        <div class="c-banner--items c-rum-banner--items paragraph paragraph--type--atge-banner paragraph--view-mode--default c-atge-banner c-atge-banner--default">
+						<div class="c-banner--item c-rum-banner--item p-banner__bg-color--brand-primary p-banner__align--center-left c-banner__mobile--reverse p-banner__align--vert-fill c-banner__layout--onecol paragraph paragraph--type--atge-banner-item paragraph--view-mode--default c-atge-banner-item c-atge-banner-item--default">
+						<div class="p-rum-banner__media p-atge-banner-item--media p-banner__media "> </div>
+
+                        <div class="p-rum-banner__content p-atge-banner-item--content p-banner__content c-banner__content--items">      
+                        <div class="c-banner__content--item c-banner__text--item c-rum-banner__content--item c-rum-banner__text--item p-banner__txt-bg--plain p-banner__txt-color--light p-banner__width--full p-banner__mtx--drop p-banner__mtx-align--left paragraph paragraph--type--atge-banner-item-text paragraph--view-mode--default c-atge-banner-item-text c-atge-banner-item-text--default">     
+                        <div class="c-banner__content--inner p-rum-banner__content--inner  c-banner__text--inner">      <h1 class="p-rum-banner--heading p-atge-banner-item-text--heading p-banner-heading">      Connect with wuhs Medical School.      </h1>   
+    
+                        <div class="p-rum-banner--copy p-atge-banner-item-text--copy p-banner-copy">
+                              <nav aria-labelledby="sidebar-socialmedianavigation" class="block block-menu navigation rte--social-media" role="navigation"><h3 class="visually-hidden" id="sidebar-socialmedianavigation">Footer Social Media Navigation</h3>
+                                   <ul class="menu menu--social-media"><li class="menu-item"><a aria-label="Facebook" class="icon-link" data-gtm="social" href="https://www.facebook.com/" rel="nofollow" target="_blank" title="Facebook"><span style="color:#ffffff;"><span class="visually-hidden">Facebook</span><span class="icon icon--facebook"> </span></span></a></li>
+	                                   <li class="menu-item"><a aria-label="Twitter" class="icon-link" data-gtm="social" href="https://twitter.com/" rel="nofollow" target="_blank" title="Twitter"><span style="color:#ffffff;"><span class="visually-hidden">Twitter</span><span class="icon icon--twitter"> </span></span></a></li>
+	                                   <li class="menu-item"><a aria-label="YouTube" class="icon-link" data-gtm="social" href="https://www.youtube.com/" rel="nofollow" target="_blank" title="YouTube"><span style="color:#ffffff;"><span class="visually-hidden">YouTube</span><span class="icon icon--youtube"> </span></span></a></li>
+	                                   <li class="menu-item"><a aria-label="Pinterest" class="icon-link" data-gtm="social" href="https://www.pinterest.com/" rel="nofollow" target="_blank" title="Pinterest"><span style="color:#ffffff;"><span class="visually-hidden">Pinterest</span><span class="icon icon--pinterest"> </span></span></a></li>
+	                                   <li class="menu-item"><a aria-label="Instagram" class="icon-link" data-gtm="social" href="https://www.instagram.com/" rel="nofollow" target="_blank" title="Instagram"><span style="color:#ffffff;"><span class="visually-hidden">Instagram</span><span class="icon icon--instagram"> </span></span></a></li>
+	                                   <li class="menu-item"><a aria-label="LinkedIn" class="icon-link" data-gtm="social" href="https://www.linkedin.com/" rel="nofollow" target="_blank" title="LinkedIn"><span style="color:#ffffff;"><span class="visually-hidden">LinkedIn</span><span class="icon icon--linkedin"> </span></span></a></li>
+                                  </ul>
+								</nav>
+                         </div>
+    
+                        </div>
+						</div>
+						</div>
+						</div>
+						</div>
+						</div>
+				</div>
+				<div  class="layout__region grid__container--item layout__region--main">
+				    <div data-block-plugin-id="inline_block:component_embedded" data-inline-block-uuid="9fcce0e1-900f-47d5-8450-ee8551b08de1" class="c-embedded c-rum-embedded block block-layout-builder block__inline-blockcomponent-embedded">
+                        <div class="paragraph paragraph--type--atge-html-markup paragraph--view-mode--embed c-atge-html-markup c-atge-html-markup--embed">
+                             <div class="clearfix text-formatted field field--name-field-atge-html-markup field--type-text-long field--label-hidden field__item">
+							 <div class="c-banner__content--item c-banner__media--item c-rum-banner__content--item c-rum-banner__media--item has-objectfit paragraph paragraph--type--atge-banner-item-media paragraph--view-mode--default c-atge-banner-item-media c-atge-banner-item-media--default">
+                          <img  src="images/so.png" width="1030" height="600" typeof="foaf:Image" class="image-style-atge-crop-freeform" />
+                         </div>
+							 </div>
+                         </div>
+                    </div>
+
+				</div>
+			</div>
+	    </div>
+	</div>
+			
+	<div class="t-layout__one-column constrained-width layout__bg--primary hide-on-desktop layout layout--atge-one-column" >
+		<div class="grid__container">
+			<div class="layout__regions grid__container--items" >
+				<div  class="layout__region layout__region--main grid__container--item">
+					<div data-block-plugin-id="inline_block:component_richtext" data-inline-block-uuid="5192a26a-e625-43bf-b2d1-d0075b1b6674" class="c-richtext c-rum-richtext block block-layout-builder block__inline-blockcomponent-richtext">  
+                    <div class="c-richtext__content c-rum-richtext__content paragraph paragraph--type--atge-rich-text paragraph--view-mode--default c-atge-rich-text c-atge-rich-text--default">        
+                        <div class="c-richtext__content--inner c-rum-richtext__content--inner">
+                           <p class="large"> </p>
+                           <p class="large"><strong><span style="color:#ffffff;">Connect With Us.</span></strong></p>
+                         <nav aria-labelledby="sidebar-socialmedianavigation" class="block block-menu navigation rte--social-media" role="navigation"><h3 class="visually-hidden" id="sidebar-socialmedianavigation">Footer Social Media Navigation</h3>
+                         <ul class="menu menu--social-media">
+						     <li class="menu-item"><a aria-label="Facebook" class="icon-link" data-gtm="social" href="https://www.facebook.com/" rel="nofollow" target="_blank" title="Facebook"><span style="color:#ffffff;"><span class="visually-hidden">Facebook</span><span class="icon icon--facebook"> </span></span></a></li>
+	                         <li class="menu-item"><a aria-label="Twitter" class="icon-link" data-gtm="social" href="https://twitter.com/" rel="nofollow" target="_blank" title="Twitter"><span style="color:#ffffff;"><span class="visually-hidden">Twitter</span><span class="icon icon--twitter"> </span></span></a></li>
+	                         <li class="menu-item"><a aria-label="YouTube" class="icon-link" data-gtm="social" href="https://www.youtube.com/" rel="nofollow" target="_blank" title="YouTube"><span style="color:#ffffff;"><span class="visually-hidden">YouTube</span><span class="icon icon--youtube"> </span></span></a></li>
+	                         <li class="menu-item"><a aria-label="Pinterest" class="icon-link" data-gtm="social" href="https://www.pinterest.com/" rel="nofollow" target="_blank" title="Pinterest"><span style="color:#ffffff;"><span class="visually-hidden">Pinterest</span><span class="icon icon--pinterest"> </span></span></a></li>
+	                         <li class="menu-item"><a aria-label="Instagram" class="icon-link" data-gtm="social" href="https://www.instagram.com/" rel="nofollow" target="_blank" title="Instagram"><span style="color:#ffffff;"><span class="visually-hidden">Instagram</span><span class="icon icon--instagram"> </span></span></a></li>
+	                        <li class="menu-item"><a aria-label="LinkedIn" class="icon-link" data-gtm="social" href="https://www.linkedin.com/" rel="nofollow" target="_blank" title="LinkedIn"><span style="color:#ffffff;"><span class="visually-hidden">LinkedIn</span><span class="icon icon--linkedin"> </span></span></a></li>
+                        </ul>
+						</nav>
+						<p> </p>
+
+          </div>
+         </div>    
+         </div>
+            <div data-block-plugin-id="inline_block:component_embedded" data-inline-block-uuid="ba0325c4-c5f6-480d-994e-fdfa1f3dacca" class="c-embedded c-rum-embedded block block-layout-builder block__inline-blockcomponent-embedded">   
+                 <div class="paragraph paragraph--type--atge-html-markup paragraph--view-mode--embed c-atge-html-markup c-atge-html-markup--embed">           
+                     <div class="clearfix text-formatted field field--name-field-atge-html-markup field--type-text-long field--label-hidden field__item">
+					     <div class="tintup" data-columns="3" data-expand="true" data-id="rusmhomepage" data-infinitescroll="true" data-personalization-id="1043736">
+						 </div>
+					  </div>
+      
+                  </div>
+  
+
+
+  
+    
+             </div>
+		 </div>
+		 </div>
+		 </div>
+	</div>
+	<!--social media section-->	
+			
+	<div class="t-layout__one-column edge-to-edge no-padding no-max-width layout__bg--none hide-on-desktop layout layout--atge-one-column" >
+				<div class="grid__container">
+					<div class="layout__regions grid__container--items" >
+																					<div  class="layout__region layout__region--main grid__container--item">
+		<div data-block-plugin-id="inline_block:component_richtext" data-inline-block-uuid="7b7f419c-30a3-4add-9ccb-5c0365174720" class="c-richtext c-rum-richtext block block-layout-builder block__inline-blockcomponent-richtext">
+  
+        <div class="c-richtext__content c-rum-richtext__content paragraph paragraph--type--atge-rich-text paragraph--view-mode--default c-atge-rich-text c-atge-rich-text--default">
+        
+          <div class="c-richtext__content--inner c-rum-richtext__content--inner">
+           <p><br /> </p>
+         </div>
+         </div>    
+         </div>
+		 </div>
+		 </div>
+		 </div>
+    </div>
+			
+	<div class="t-layout__one-column edge-to-edge no-padding no-max-width layout__bg--none layout layout--atge-one-column" >
+				<div class="grid__container">
+					<div class="layout__regions grid__container--items" >
+																					<div  class="layout__region layout__region--main grid__container--item">
+									<div data-block-plugin-id="block_content:881080e9-45f1-4479-b361-58455064c739" class="c-grid c-rum-grid block block-block-content block__block-content881080e9-45f1-4479-b361-58455064c739">
+
+  
+    
+
+    
+      
+  
+      <div class="c-grid__content c-rum-grid__content p-banner__bg-color--none p-txt-align--center c-layout--fixed c-grid--content paragraph paragraph--type--atge-grid paragraph--view-mode--default c-atge-grid c-atge-grid--default">
+      
+
+    
+  <div class="c-rum-grid__content--inner c-grid__content--inner">
+              <div class="c-rum-grid__header c-grid__header">
+                  <div class="c-rum-grid__header--title c-grid__header--title p-txt-color--brand-primary">
+            <span>Keep current on the latest wuhs University school of medicine news.</span>
+          </div>
+        
+                      </div>
+    
+              
+      <div class="c-view c-rum-view c-grid__layout--threecol p-txt-align--center p-title-txt-color--light paragraph paragraph--type--atge-view paragraph--view-mode--default c-atge-view c-atge-view--default">
+            
+<div class="field field--name-field-atge-views-ref field--type-viewfield field--label-hidden">
+  
+    
+        
+<div class="field__item field__item-label-hidden">
+  
+    
+      <div class="views-element-container"><div class="view view-atge-news-tagged-listing view-id-atge_news_tagged_listing view-display-id-atge_news_tagged_featured_block js-view-dom-id-17a8b6e9ec014054febc7391cc825131a3b9623c33d68c55b9880d9170a166cc">
+  
+    
+      
+      <div class="view-content">
+          <div class="views-row">
+
+
+<article role="article" about="/about/news/medical-students-thank-readiness-program-for-academic-success" class="t-article t-rum-article t-article__grid t-rum-article__grid t-content-type__grid node node--type-atge-article node--view-mode-grid">
+
+          
+  
+      
+  <a href="about/news/medical-students-thank-readiness-program-for-academic-success.html" title="Medical Students Thank Readiness Program for Academic Success" aria-label="Medical Students Thank Readiness Program for Academic Success" data-gtm=&#039;call-to-action&#039;>
+
+              <div class="t-article__grid--type t-rum-article__grid--media t-content-type__grid--type">
+        Blog
+      </div>
+    
+              <div class="t-article__grid--media t-rum-article__grid--media t-content-type__grid--media has-objectfit">
+        
+      <div class="c-image c-rum-image paragraph paragraph--type--atge-media paragraph--view-mode--teaser c-atge-media c-atge-media--teaser">
+          <div class="" style="height: 100%;max-width: 100%;">
+                    <img  src="images/s1.jpg" typeof="foaf:Image" class="image-style-atge-no-style-lg" />
+
+
+            </div>
+    </div>
+  
+
+      </div>
+    
+        <div class="t-article__grid--content t-rum-article__grid--content t-content-type__grid--content">
+
+            <div class="t-article__grid--title t-rum-article__grid--title t-content-type__grid--title">
+                  
+      Medical Students Thank Readiness Program for Academic Success
+  
+
+              </div>
+
+            <div class="t-article__grid--body t-rum-article__grid--body t-content-type__grid--body"><div class="image--left-float">
+<div data-embed-button="paragraphs" data-entity-label="Paragraphs" data-paragraph-id="89f847b3-54c6-48a2-805e-209daf215c93" data-langcode="en" data-view-mode="embed" data-entity-embed-display="entity_reference:entity_reference_entity_view" data-entity-embed-display-se=""></div></div></div>
+
+    </div>
+
+  </a>
+
+
+  
+
+</article>
+</div>
+    <div class="views-row">
+
+
+<article role="article" about="/about/news/medical-student-victoria-loft-advocates-for-lgbtq-healthcare-equality" class="t-article t-rum-article t-article__grid t-rum-article__grid t-content-type__grid node node--type-atge-article node--view-mode-grid">
+
+          
+  
+      
+  <a href="about/news/medical-student-victoria-loft-advocates-for-lgbtq-healthcare-equality.html" title="Medical Student Victoria Loft Advocates for LGBTQ+ Healthcare Equality" aria-label="Medical Student Victoria Loft Advocates for LGBTQ+ Healthcare Equality" data-gtm=&#039;call-to-action&#039;>
+
+              <div class="t-article__grid--type t-rum-article__grid--media t-content-type__grid--type">
+        News
+      </div>
+    
+              <div class="t-article__grid--media t-rum-article__grid--media t-content-type__grid--media has-objectfit">
+        
+      <div class="c-image c-rum-image paragraph paragraph--type--atge-media paragraph--view-mode--teaser c-atge-media c-atge-media--teaser">
+          <div class="" style="height: 100%;max-width: 100%;">
+                    <img  src="images/s2.jpg" width="454" height="227" typeof="foaf:Image" class="image-style-atge-2-1-crop" />
+
+
+            </div>
+    </div>
+  
+
+      </div>
+    
+        <div class="t-article__grid--content t-rum-article__grid--content t-content-type__grid--content">
+
+            <div class="t-article__grid--title t-rum-article__grid--title t-content-type__grid--title">
+                  
+      Medical Student Victoria Loft Advocates for LGBTQ+ Healthcare Equality
+  
+
+              </div>
+
+            <div class="t-article__grid--body t-rum-article__grid--body t-content-type__grid--body"><div class="image--left-float">
+<div data-embed-button="paragraphs" data-entity-label="Paragraphs" data-paragraph-id="b483e875-ec47-44ac-9429-d3fb21163bd7" data-langcode="en" data-view-mode="embed" data-entity-embed-display="entity_reference:entity_reference_entity_view" data-entity-embed-display-se=""></div></div></div>
+
+    </div>
+
+  </a>
+
+
+  
+
+</article>
+</div>
+    <div class="views-row">
+
+
+<article role="article" about="/about/news/medical-student-jalen-jones-breaks-through-racist-obstacles" class="t-article t-rum-article t-article__grid t-rum-article__grid t-content-type__grid node node--type-atge-article node--view-mode-grid">
+
+          
+  
+      
+  <a href="about/news/medical-student-jalen-jones-breaks-through-racist-obstacles.html" title="Medical Student Jalen Jones Breaks Through Racist Obstacles" aria-label="Medical Student Jalen Jones Breaks Through Racist Obstacles" data-gtm=&#039;call-to-action&#039;>
+
+              <div class="t-article__grid--type t-rum-article__grid--media t-content-type__grid--type">
+        News
+      </div>
+    
+              <div class="t-article__grid--media t-rum-article__grid--media t-content-type__grid--media has-objectfit">
+        
+      <div class="c-image c-rum-image paragraph paragraph--type--atge-media paragraph--view-mode--teaser c-atge-media c-atge-media--teaser">
+          <div class="" style="height: 100%;max-width: 100%;">
+                    <img src="images/s3.jpg" width="350" height="350" typeof="foaf:Image" class="image-style-atge-1-1-crop" />
+
+
+            </div>
+    </div>
+  
+
+      </div>
+    
+        <div class="t-article__grid--content t-rum-article__grid--content t-content-type__grid--content">
+
+            <div class="t-article__grid--title t-rum-article__grid--title t-content-type__grid--title">
+                  
+      Medical Student Jalen Jones Breaks Through Racist Obstacles
+  
+
+              </div>
+
+            <div class="t-article__grid--body t-rum-article__grid--body t-content-type__grid--body"><div class="image--left-float">
+<div data-embed-button="paragraphs" data-entity-label="Paragraphs" data-paragraph-id="83a60d2a-c07a-43da-97c0-e8395fce33d8" data-langcode="en" data-view-mode="embed" data-entity-embed-display="entity_reference:entity_reference_entity_view" data-entity-embed-display-se=""></div></div></div>
+
+    </div>
+
+  </a>
+
+
+  
+
+</article>
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+
+    </div>
+
+      </div>
+  
+
+    
+              <div class="c-rum-grid__footer c-grid__footer">
+                  
+      <div class="c-button c-rum-button paragraph paragraph--type--atge-button paragraph--view-mode--teaser c-atge-button c-atge-button--teaser">
+              <a href="about/news.html" name="" aria-label="View All" target="" rel="" class="e-btn--primary" data-gtm="call-to-action">View All<span class="e-icon"></span></a>
+      </div>
+  
+
+              </div>
+      </div>
+    </div>
+  
+
+
+  
+    
+</div>
+
+								</div>
+																		</div>
+				</div>
+			</div>
+			
+    </div>
+
+  
+</article>
+
+  
+    
+</div>
+
+      
+                        </div>
+  
+		</div>
+		
+	</main>
+<footer role="contentinfo" class="page--footer">
+<div class="region region__footer">
+<div id="block-footer-sitebranding" data-block-plugin-id="system_branding_block" class="block block-system block-system-branding-block block__site-logo region--footer">
+        <a href="index.html" title="Home" rel="home"  class="e-logo" onClick="Drupal.behaviors.atgeAnalytics.navClick('Footer', 'logo')">
+        <img loading="lazy"  alt="Washington University of Health and Science" class="footer-sitebranding" src="images/footer-logo.png">
+      </a>
+  </div>
+<div id="block-footer-address" data-block-plugin-id="block_content:a67ac222-6488-4aed-87c5-1d1cc3dba290" class="c-richtext c-rum-richtext block block-block-content block__block-contenta67ac222-6488-4aed-87c5-1d1cc3dba290">
+<div class="c-richtext__content c-rum-richtext__content paragraph paragraph--type--atge-rich-text paragraph--view-mode--default c-atge-rich-text c-atge-rich-text--default">
+<div class="c-richtext__content--inner c-rum-richtext__content--inner">
+      <p>CAMPUS ADDRESS: Sea Star Drive,San Pedro, Ambergris Caye, Belize Central America.</p>
+
+<p>USA ADMISSIONS ADDRESS: C/O American Academic Services,2602 Oakstone Dr, Suite 6,Columbus, OH 43231 </br>ADMISSIONS:  <a data-click-label="+501-6539581" data-gtm="phone" href="tel:+501-6539581"><strong>+501-6539581</strong></a><a data-click-label="+501-6540972" data-gtm="phone" href="tel:+501-6540972"><strong>+501-6540972</strong></a> EMAIL: <a href="admissions@wuhs.edu.bz">admissions@wuhs.edu.bz</a></p>
+
+    </div>
+      </div>    
+</div>
+
+<nav aria-labelledby="system-menu-blocksocial-media-block-socialmedianavigation-footer" id="block-socialmedianavigation" data-block-plugin-id="system_menu_block:social-media" class="block block-menu navigation menu--social-media">
+            
+  <h3 class="visually-hidden" id="system-menu-blocksocial-media-block-socialmedianavigation-footer">Social Media Navigation</h3>
+  
+        <ul class="menu menu--social-media">
+        <li class="menu-item">
+          <a href="#" class="icon-link" aria-label="Facebook" data-gtm="social" data-click-action="link" data-click-label="Facebook" rel="nofollow" target="_blank" title="Facebook">          <span class="visually-hidden">Facebook</span>
+          <span class="icon icon--facebook"></span>
+        </a>
+        </li>
+		<li class="menu-item">
+          <a href="#" class="icon-link" aria-label="LinkedIn" data-gtm="social" data-click-action="link" data-click-label="LinkedIn" rel="nofollow" target="_blank" title="LinkedIn">          <span class="visually-hidden">LinkedIn</span>
+          <span class="icon icon--linkedin"></span>
+        </a>
+        </li>
+		<li class="menu-item">
+          <a href="#" class="icon-link" aria-label="TikTok" data-gtm="social" data-click-action="link" data-click-label="TikTok" rel="nofollow" target="_blank" title="TikTok">          <span class="visually-hidden">TikTok</span>
+          <span class="icon icon--tiktok"></span>
+        </a>
+        </li>
+		<li class="menu-item">
+          <a href="#" class="icon-link" aria-label="Twitter" data-gtm="social" data-click-action="link" data-click-label="Twitter" rel="nofollow" target="_blank" title="Twitter">          <span class="visually-hidden">Twitter</span>
+          <span class="icon icon--twitter"></span>
+        </a>
+        </li>
+		<li class="menu-item">
+          <a href="#" class="icon-link" aria-label="Instagram" data-gtm="social" data-click-action="link" data-click-label="Instagram" rel="nofollow" target="_blank" title="Instagram">          <span class="visually-hidden">Instagram</span>
+          <span class="icon icon--instagram"></span>
+        </a>
+        </li>
+		<li class="menu-item">
+          <a href="#" class="icon-link" aria-label="YouTube" data-gtm="social" data-click-action="link" data-click-label="YouTube" rel="nofollow" target="_blank" title="YouTube">          <span class="visually-hidden">YouTube</span>
+          <span class="icon icon--youtube"></span>
+        </a>
+        </li>
+		<li class="menu-item">
+          <a href="#" class="icon-link" aria-label="Pinterest" data-gtm="social" data-click-action="link" data-click-label="Pinterest" rel="nofollow" target="_blank" title="Pinterest">          <span class="visually-hidden">Pinterest</span>
+          <span class="icon icon--pinterest"></span>
+        </a>
+        </li>
+		<li class="menu-item">
+          <a href="#" class="icon-link" aria-label="SnapChat" data-gtm="social" data-click-action="link" data-click-label="SnapChat" rel="nofollow" target="_blank" title="SnapChat">          <span class="visually-hidden">SnapChat</span>
+          <span class="icon icon--snapchat"></span>
+        </a>
+        </li>
+          </ul>
+  
+
+
+  </nav>
+
+<nav aria-labelledby="system-menu-blockfooter-block-footer-footer" id="block-footer" data-block-plugin-id="system_menu_block:footer" class="block block-menu navigation menu--footer">
+            
+  <h3 class="visually-hidden" id="system-menu-blockfooter-block-footer-footer">Footer Navigation</h3>
+         <ul region="footer" class="menu">
+               <li class="menu-item" >
+                                <a href="#" id="Info Sessions" onClick="Drupal.behaviors.atgeAnalytics.navClick(&#039;Footer&#039;, &#039;Events &amp; Webinars&#039;)" data-drupal-link-system-path="node/131">Events &amp; Webinars</a>
+                </li>
+                <li class="menu-item" >
+                                <a href="#" title="Contact wuhs" onClick="Drupal.behaviors.atgeAnalytics.navClick(&#039;Footer&#039;, &#039;Contact wuhs&#039;)" data-drupal-link-system-path="node/51">Contact wuhs</a>
+                 </li>
+                 <li class="menu-item">
+                                <a href="#" title="Request Information" onClick="Drupal.behaviors.atgeAnalytics.navClick(&#039;Footer&#039;, &#039;Request Information&#039;)" data-drupal-link-system-path="node/2336">Request Information</a>
+                 </li>
+                 <li class="menu-item">
+                                <a href="#" title="Employment" onClick="Drupal.behaviors.atgeAnalytics.navClick(&#039;Footer&#039;, &#039;EMPLOYMENT&#039;)">EMPLOYMENT</a>
+                 </li>
+                 <li class="menu-item">
+                                <a href="#" title="Privacy Policy" onClick="Drupal.behaviors.atgeAnalytics.navClick(&#039;Footer&#039;, &#039;Privacy Policy&#039;)" data-drupal-link-system-path="node/616">Privacy Policy</a>
+                 </li>
+                 <li class="menu-item">
+                                <a href="#" title="Sitemap" onClick="Drupal.behaviors.atgeAnalytics.navClick(&#039;Footer&#039;, &#039;Sitemap&#039;)" data-drupal-link-system-path="node/2301">Sitemap</a>
+                 </li>
+        </ul>
+  
+
+  </nav>
+<div id="block-footer-copyright-and-links" data-block-plugin-id="block_content:3cd5a9db-fa14-45ec-a148-1bb3d87fc27e" class="c-richtext c-rum-richtext block block-block-content block__block-content3cd5a9db-fa14-45ec-a148-1bb3d87fc27e">
+<div class="c-richtext__content c-rum-richtext__content paragraph paragraph--type--atge-rich-text paragraph--view-mode--default c-atge-rich-text c-atge-rich-text--default">
+        
+      <div class="c-richtext__content--inner c-rum-richtext__content--inner">
+      <p><a href="#">Academic Catalog</a> | <a href="#" target="_blank">Student Handbook</a> | <a href="#">Student Consumer Information</a> | <a href="#">Online Cookie Policy</a> | <a href="#">Accessibility Statement</a></p>
+
+<p>© 2021 Washington University of Health and Science. All rights reserved.</p>
+
+    </div>
+      </div>   
+</div></div>
+  
+</footer>
+			
+		
+
+</div>
+
+  </div>
+
+    
+    <script src="sites/g/files/krcnkv261/files/js/js_yIXD7jhxeaGh2Z5TWWe78HWxK_JF4RuhsuvdXcu1f0U.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"c357dda42d","applicationID":"321930597","transactionName":"NFZaMhNSWksEAENfCw0ceQUVWltWSidFQxQCX2QIDldRZCYMWUIWDF9UAxNvelcBBmFfARRwVwgVQVtUCQZFG1oVWl0R","queueTime":0,"applicationTime":2625,"atts":"GBFZRFtISUU=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from medical.rossu.edu/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Apr 2021 06:16:34 GMT -->
+</html>
